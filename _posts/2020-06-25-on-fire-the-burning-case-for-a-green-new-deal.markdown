@@ -1,7 +1,10 @@
 ---
 layout: post
 title:  "On Fire: The (Burning) Case for a Green New Deal"
+category: book
 ---
+
+![Book cover](/assets/on-fire-the-burning-case-for-a-green-new-deal.png)
 
 By Naomi Klein.
 

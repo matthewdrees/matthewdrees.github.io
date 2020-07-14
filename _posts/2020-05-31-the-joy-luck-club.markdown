@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "The Joy Luck Club"
+category: book
 ---
 
-![Book cover](/assets/the_joy_luck_club.jpg)
+![Book cover](/assets/the-joy-luck-club.jpg)
 
 The Joy Luck Club was written in 1989 by Amy Tan and is an American classic. It was required reading in school for many people. It's a great choice for a book club. I put this book on my list after sitting next to someone on a recent flight who gave it a glowing review: “I can’t believe I haven’t read this book before. It’s amazing!”. Much of the book takes place in San Francisco; I lived close by in Alameda for a few years.
 
