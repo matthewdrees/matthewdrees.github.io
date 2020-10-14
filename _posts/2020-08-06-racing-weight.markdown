@@ -3,7 +3,7 @@ layout: post
 title:  "Book Notes: Racing Weight"
 category: book
 ---
-![Book cover](/asserts/racing-weight.jpg)
+![Book cover](/assets/racing-weight.jpg)
 
 By Matt Fitzgerald
 
