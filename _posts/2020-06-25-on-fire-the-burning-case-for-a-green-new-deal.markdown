@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "On Fire: The (Burning) Case for a Green New Deal"
+title:  "Book notes: On Fire: The (Burning) Case for a Green New Deal"
 category: book
 ---
 

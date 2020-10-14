@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Joy Luck Club"
+title:  "Book notes: The Joy Luck Club"
 category: book
 ---
 
