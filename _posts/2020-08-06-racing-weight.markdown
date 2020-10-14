@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Racing Weight"
+title:  "Book Notes: Racing Weight"
 category: book
 ---
 ![Book cover](/asserts/racing-weight.jpg)

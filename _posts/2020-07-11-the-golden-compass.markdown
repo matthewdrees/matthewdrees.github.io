@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Golden Compass"
+title:  "Book Notes: The Golden Compass"
 category: book
 ---
 
