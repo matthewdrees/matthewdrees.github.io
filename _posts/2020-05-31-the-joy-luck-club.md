@@ -6,7 +6,7 @@ category: book
 
 ![Book cover](/assets/the-joy-luck-club.jpg)
 
-The Joy Luck Club was written in 1989 by Amy Tan and is an American classic. It was required reading in school for many people. It's a great choice for a book club. I put this book on my list after sitting next to someone on a recent flight who gave it a glowing review: “I can’t believe I haven’t read this book before. It’s amazing!”. Much of the book takes place in San Francisco; I lived close by in Alameda for a few years.
+The Joy Luck Club was written in 1989 by Amy Tan and is an American classic. It was required reading in school for many people, and a great choice for a book club. I put this book on my list after sitting next to someone on a recent flight who gave it a glowing review: “I can’t believe I haven’t read this book before. It’s amazing!”. Much of the book takes place in San Francisco; I lived close by in Alameda for a few years.
 
 The book follows 8 women: 4 mothers (Suyuan Woo, An-Mei Hsu, Lindo Jong, and Ying-Ying St. Clair) and their daughters (Jing-mei “June” Woo, Rose Hsu Jordan, Waverly Jong, and Lena St. Clair). It is written as 16 stories, grouped into 4 sections. After leaving China, the 4 mothers met in San Francisco and formed the "Joy Luck Club" over games of mah jong in San Francisco around 1950.
 
