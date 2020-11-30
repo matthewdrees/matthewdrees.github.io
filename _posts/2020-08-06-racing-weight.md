@@ -29,7 +29,22 @@ The only way to know for sure is get to your optimal performance and measure you
 “Diet with a name”: Weight Watchers for calories, Atkins diet for no carbs. Effective at first, but few don’t attain goal and 80% of those don’t keep it off. These diets are “sabotage” for endurance athlete training. Hitting home that you need to focus on performance. Calories in, calories out is the only way to lose weight. Can’t increase power and lose weight at the same time, have to do one or the other. Large calorie deficits can cause muscle loss. Muscle is the “metabolic engine” that causes other weight loss. Lol describes recreational athletes as “age groupers”. The people that stick with weight loss systems are the ones that think it will work.
 
 *Step 1*: Improving Your Diet Quality
-MQ: “Of course people who eat a lot of potato chips gain more weight over time! But the keys to effective weight management … have always been obvious. The reason so many of us struggle with weight management is that we don’t do the obvious.” Glycemic index is “a nearly useless tool”. Diet Quality Score. TODO: table “The effect of food on hunger is determined primarily by its volume.” Description of 10 categories, 6 high quality, 4 low quality, along with common sense serving sizes for each. Simplest is to substitute low quality food with high quality, then could do a 3-day food journal. Highest score possible is 32.
+MQ: “Of course people who eat a lot of potato chips gain more weight over time! But the keys to effective weight management … have always been obvious. The reason so many of us struggle with weight management is that we don’t do the obvious.” Glycemic index is “a nearly useless tool”. Diet Quality Score (Page 62), points per serving of each food type.
+
+| Food type         | 1 | 2 | 3 | 4 | 5 | 6 |
+|:-----------------:|:-:|:-:|:-:|:-:|:-:|:-:|
+| Fruits            | 2 | 2 | 2 | 1 | 0 | 0 |
+| Vegetables        | 2 | 2 | 2 | 1 | 0 | 0 |
+| Lean means & fish | 2 | 2 | 1 | 0 | 0 | 0 |
+| Nuts & seeds      | 2 | 2 | 1 | 0 | 0 |-1 |
+| Whole grains      | 2 | 2 | 1 | 0 | 0 |-1 |
+| Dairy             | 1 | 1 | 1 | 0 |-1 |-2 |
+| Refined grains    |-1 |-1 |-2 |-2 |-2 |-2 |
+| Sweets            |-2 |-2 |-2 |-2 |-2 |-2 |
+| Fried foods       |-2 |-2 |-2 |-2 |-2 |-2 |
+| Fatty proteins    |-1 |-1 |-2 |-2 |-2 |-2 |
+
+“The effect of food on hunger is determined primarily by its volume.” Description of 10 categories, 6 high quality, 4 low quality, along with common sense serving sizes for each. Simplest is to substitute low quality food with high quality, then could do a 3-day food journal. Highest score possible is 32.
 * Fruit. E.g. One banana, big handful of berries.
 * Veggies. E.g. fist-sized solid veggie, ½ cup tomato sauce, medium-sized salad.
 * Lean meats & fish. Open palm. (eggs count)
