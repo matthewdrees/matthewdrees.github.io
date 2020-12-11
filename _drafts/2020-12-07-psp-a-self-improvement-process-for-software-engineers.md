@@ -36,3 +36,8 @@ For program quality, defects per 1,000,000 LOC (MLOC).
 Calculating productivity, generally LOC divided by hours. Generally use LOC = added + modified. Expect lower productivity on small changes on larger code bases.
 
 Physical vs Logical LOC. The author spent 50 hours on his 939 LOC pascal logical line counter. "Presently there is no compelling evidence to support any one counting method over another" (p. 49). Pick one and be precise and consistent.
+
+### 4. Planning
+Why plan? ¯\_(ツ)_/¯. Kidding. See Figure 4.1 (p. 63) "Project Planning Framework". The general strategy is familiar... start with a detailed "statement of work", create a "conceptual design" break down the work into tasks that you know can be done, and estimate with historical data. Follow up afterwards to see how accurate your estimate was. Report progress and follow up with any requirements changes. In the conceptual design phase, spend a few minutes thinking through alternate implementations that can reduce the work. Interestingly, don't spend more than a few hours estimating, even for "fairly large programs" (p. 64).
+
+### 5. Software Estimating
