@@ -12,11 +12,12 @@ Here's the link to the programming and report exercises: https://resources.sei.c
 
 ### Key Takeaways
 1. Introduces a personal development process. Asks the reader to write ~20 coding problems and record some metrics (time, # defects, etc.), then analyze those metrics for process improvement and planning.
+2. A software group at Maturity Model Level 1 introduces ~7.5 defects/KLOC (p 133). We should demand defect rates an order of magnitude lower. The PSP, and TSP (Team Software Process) describes a way to get there.
 
 ### Preface
-"The record of most development groups is poor, but the record of software groups is particularly bad." (p xiii). "If we are to call ourselves engineers, we must learn to produce quality products on predictable schedules" (p. xiv). The author compares the challenege of improving software skills to that of running faster, where you measure your current fitness with metrics, and find ways to improve.
+"The record of most development groups is poor, but the record of software groups is particularly bad." (p xiii). "If we are to call ourselves engineers, we must learn to produce quality products on predictable schedules" (p xiv). The author compares the challenege of improving software skills to that of running faster, where you measure your current fitness with metrics, and find ways to improve.
 
-To learn the PSP, "write a program at each of the six PSP process levels plus an additional two to four programs to master the methods and build the data to support your continuning work" (p. xvii).
+To learn the PSP, "write a program at each of the six PSP process levels plus an additional two to four programs to master the methods and build the data to support your continuning work" (p xvii).
 
 ### 1. The Personal Process Strategy
 We need better better personal performance on a software team, like a musician in a symphony. Interestingly, the author wrote 72 programs before "getting the hang" of his own process. 
@@ -27,17 +28,63 @@ Do a small coding project using their introductory "PSP0" process. (Note above w
 The process asks you to do all your coding up front before compiling. I would normally put all the unit test code in place first, then compile, convince myself that a failing test behaves the way I want, and then code up the solution. I kept an open mind and did it all up front. In the future perhaps that will become 2 separate iterations of the process?
 
 ### 3. Measuring Software Size
-"The proincipal ways to use size data are in planning, quality management, and process analysis" (p. 45). A good measure has high correlation (degree that two sets are related) and significance (probability that the relationship occured by chance).
+"The principal ways to use size data are in planning, quality management, and process analysis" (p 45). A good measure has high correlation (degree that two sets are related) and significance (probability that the relationship occurred by chance).
 
-Establish standards for databases (e.g. number of tables, columns) and lines of code (LOC). LOC standards can be different per language. Modified LOC can count like new LOC, though managing that is trickier than it sounds, there are a few pages dedicated to a "size accounting system" for dealing with modifided/added/reused code (though instinctively, I want to use whatever git gives me for free on this).
+Establish standards for databases (e.g. number of tables, columns) and lines of code (LOC). LOC standards can be different per language. Modified LOC can count like new LOC, though managing that is trickier than it sounds, there are a few pages dedicated to a "size accounting system" for dealing with modified/added/reused code (though instinctively, I want to use whatever git gives me for free on this).
 
 For program quality, defects per 1,000,000 LOC (MLOC).
 
 Calculating productivity, generally LOC divided by hours. Generally use LOC = added + modified. Expect lower productivity on small changes on larger code bases.
 
-Physical vs Logical LOC. The author spent 50 hours on his 939 LOC pascal logical line counter. "Presently there is no compelling evidence to support any one counting method over another" (p. 49). Pick one and be precise and consistent.
+Physical vs Logical LOC. The author spent 50 hours on his 939 LOC pascal logical line counter. "Presently there is no compelling evidence to support any one counting method over another" (p 49). Pick one and be precise and consistent.
 
 ### 4. Planning
-Why plan? ¯\_(ツ)_/¯. Kidding. See Figure 4.1 (p. 63) "Project Planning Framework". The general strategy is familiar... start with a detailed "statement of work", create a "conceptual design" break down the work into tasks that you know can be done, and estimate with historical data. Follow up afterwards to see how accurate your estimate was. Report progress and follow up with any requirements changes. In the conceptual design phase, spend a few minutes thinking through alternate implementations that can reduce the work. Interestingly, don't spend more than a few hours estimating, even for "fairly large programs" (p. 64).
+Why plan? ¯\_(ツ)_/¯. Kidding. See Figure 4.1 (p 63) "Project Planning Framework". The general strategy is familiar... start with a detailed "statement of work", create a "conceptual design" break down the work into tasks that you know can be done, and estimate with historical data. Follow up afterwards to see how accurate your estimate was. Report progress and follow up with any requirements changes. In the conceptual design phase, spend a few minutes thinking through alternate implementations that can reduce the work. Interestingly, don't spend more than a few hours estimating, even for "fairly large programs" (p 64).
 
 ### 5. Software Estimating
+PSP estimating process. "The conceptual design must reflect the way you plan to build the product" (p 70). Break down the conceptual design into parts. Based on the function (Data, I/O, etc), number of items in each part, and size of each item (5 sizes, very small through very large), use a "relative size table" to convert that to total LOC. Then use LOC to estimate total effort.
+
+Proxy-based estimating. A proxy should have a correlation >= 0.7 to development effort, calculated automatically, and be easily visualized. Examples are # classes and database elements. Each person on a team can create different LOC for a given proxy, so use personal data. Table 5.1 shows "relative size table" with difference in LOC per item based on category (p 77).
+
+### 6. The PROBE Estimating Method
+PROxy-Based Estimating (PROBE). Development time uses a linear-fit line based on historical size data. Example estimating problem, and how to estimate if you don't have enough data points (ideally > 3). You can use this process for non-programming tasks.
+
+### 7. Software Planning
+How to make a software schedule. Distinguish "project time" (i.e. task hours) from "calendar time" (weeks, months). It's common to only average 12-15 task hours per week with meetings, vacations, etc. 20 task hours in a week is very productive. Track "Earned Value", the "Planned Value" of a task (task hours divided by total hours), when each task is complete. The author shows the plan for creating this book, which took ~400 task hours to complete the first draft. (Nice job eating the dog food!) Calculate 70% prediction interval for estimating. Strive for task lengths for updates 2-4 times per week. Alert management to changes. The Earned Value score for planning/designing/reviewing will hopefully give motivation to actually do them :-). 
+
+### 8. Software Quality
+Great chapter! It starts with a challenge to the software industry... software developed with Capability Maturity Model level 1 (the most prevalent) result in about 7.5 defects/KLOC (p 133). We should demand this be an order of magnitude lower.
+
+It's cheaper to find defects earlier in the process (we knew that, but worth mentioning again).
+
+Track defect types.
+
+Quality Measures: Defect removal yield, cost of quality (failure, prevention, and appraisal), review rates, phase-time ratios.
+
+PSP defines: (p 146)
+* Failure COQ: (compile + test time) / total time
+* Appraisal COQ: (design review time + code review time) / total time
+* Total COQ: Appraisal COQ + Failure COQ
+* Appraisal as a % of Total Quality Costs: Appraisal COQ / Total COQ
+* Appraisal to Failure Ratio (A/FR): Appraisal COQ / Failure COQ.
+
+Several pages dedicated to PSP problem data on the above to come up with the following rules of thumb:
+* A/FR value ~= 2.0 (p 146).
+* 100-200 LOC/hour for effective code review rate, ideally looking for a 70% yield (p 148).
+* 1.5:1 ratio of design time to coding time (p 149).
+* Spend 70% of your design time in a high-quality design review. (p 150)
+* Spend 70% of your coding time in a high-quality code review. (p 150)
+
+Process Quality Index = Design/Code Time * Design Review Time * Compile Defect / KLOC * Unit Test Defects/ KLOC (p 151)
+
+* Design/Code Time = design time / coding time
+* Design Review Time = 2 * design review time / design time
+* Code Review Time = 2 * code review time / design time
+* Compile Defects / KLOC = 20 / (10 + compile defects / KLOC)
+* Unit Test Defect / KLOC = 10 / (5 + unit test defects / KLOC)
+
+"PQI values of 0.4 historically have had no defects found after unit testing." (p 151)
+
+"Surprisingly, however, when developers and their teams use reasonable care throughout the process, their finished products have essentially no defects." (p 155)
+
+Have meetings once a month or so to discuss process improvements for systemic defects.
