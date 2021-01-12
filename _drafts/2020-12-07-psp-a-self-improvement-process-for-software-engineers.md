@@ -88,3 +88,14 @@ Process Quality Index = Design/Code Time * Design Review Time * Compile Defect /
 "Surprisingly, however, when developers and their teams use reasonable care throughout the process, their finished products have essentially no defects." (p 155)
 
 Have meetings once a month or so to discuss process improvements for systemic defects.
+
+### 9. Design and Code Reviews
+This book covers personal (self) reviews, as opposed to team inspections. "Finding defects in personal reviews is much more efficient than finding them during testing" (p 195). The PSP goal is to find and fix all defects before the first compile.
+
+Review Principles (p 169): Review your work before moving on, find and fix your defects, use checklists, follow sound review principles (small amounts, print on paper, don't do them when you're tired), measure time and defects, improve your review process, design your product so it is easily reviewed, and identify ways to prevent defects.
+
+Review measures:
+* Review yield: % of total defects removed in this review phase. It's the best measure, but you don't know the precise number until the product has shipped and been in use for a while.
+* Defect-removal leverage (DRL): (p192) Defects removed / hour. Interesting graphs of yield vs LOC reviewed/hour. PSP data on programs 7-10 said code reviews twice as effective as unit tests at finding and fixing defects. Design reviews are as effective (but likely have follow on benefits) (p 193).
+
+Even experienced developers introduce 100 defects / KLOC before compiling.
