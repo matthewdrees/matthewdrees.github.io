@@ -11,8 +11,9 @@ I actually bought this book a decade ago. I recall doing the first project and m
 Here's the link to the programming and report exercises: https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=530425. In the zip file: Student Workbook/PSP Student Workbook.2006.10.07/PSP Course Materials/ASGKIT PROG*.doc. (The link in the book doesn't work anymore.)
 
 ### Key Takeaways
-1. Introduces a personal development process. Asks the reader to write ~20 coding problems and record some metrics (time, # defects, etc.), then analyze those metrics for process improvement and planning.
+1. Introduces a personal development process. Asks the reader to write several small coding problems and record metrics (time, # defects, etc.), then analyze those metrics for process improvement and planning.
 2. A software group at Maturity Model Level 1 introduces ~7.5 defects/KLOC (p 133). We should demand defect rates an order of magnitude lower. The PSP, and TSP (Team Software Process) describes a way to get there.
+3. Slow down, do a good job on your personal work, and your team will work more efficiently.
 
 ### Preface
 "The record of most development groups is poor, but the record of software groups is particularly bad." (p xiii). "If we are to call ourselves engineers, we must learn to produce quality products on predictable schedules" (p xiv). The author compares the challenege of improving software skills to that of running faster, where you measure your current fitness with metrics, and find ways to improve.
@@ -53,7 +54,7 @@ PROxy-Based Estimating (PROBE). Development time uses a linear-fit line based on
 How to make a software schedule. Distinguish "project time" (i.e. task hours) from "calendar time" (weeks, months). It's common to only average 12-15 task hours per week with meetings, vacations, etc. 20 task hours in a week is very productive. Track "Earned Value", the "Planned Value" of a task (task hours divided by total hours), when each task is complete. The author shows the plan for creating this book, which took ~400 task hours to complete the first draft. (Nice job eating the dog food!) Calculate 70% prediction interval for estimating. Strive for task lengths for updates 2-4 times per week. Alert management to changes. The Earned Value score for planning/designing/reviewing will hopefully give motivation to actually do them :-). 
 
 ### 8. Software Quality
-Great chapter! It starts with a challenge to the software industry... software developed with Capability Maturity Model level 1 (the most prevalent) result in about 7.5 defects/KLOC (p 133). We should demand this be an order of magnitude lower.
+Great chapter! It starts with a challenge to the software industry... software developed with Capability Maturity Model level 1 (the most prevalent) result in about 7.5 defects/KLOC (p 133). We should demand this be orders of magnitude lower.
 
 It's cheaper to find defects earlier in the process (we knew that, but worth mentioning again).
 
@@ -99,3 +100,6 @@ Review measures:
 * Defect-removal leverage (DRL): (p192) Defects removed / hour. Interesting graphs of yield vs LOC reviewed/hour. PSP data on programs 7-10 said code reviews twice as effective as unit tests at finding and fixing defects. Design reviews are as effective (but likely have follow on benefits) (p 193).
 
 Even experienced developers introduce 100 defects / KLOC before compiling.
+
+### 10. Software Design
+Taking time to design will improve your code quality, but you will move slower in the short term (p 206). Requirements will always change as you design. Divide and conquer problems. Use prototypes. Do deep dives into modules that have uncertainty. Iterate. Talks about levels of design: requirements, system, high-level, detailed, and implementation. Offers strategies for high level design: progressive (sequential), functional-enhancement (flush out a minimal system then improve), and fast-path enhancement strategy (focus on critical performance path first). Talks about design specification trade-offs. It isn't economical to specify every design detail. It would take too much time and be too cumbersome to maintain. It's worth documenting your design decisions, say in a personal journal. It's worth documenting high-level or critical design decisions.
