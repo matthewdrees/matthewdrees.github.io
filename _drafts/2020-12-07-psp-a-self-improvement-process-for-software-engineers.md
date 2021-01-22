@@ -14,11 +14,12 @@ Here's the link to the programming and report exercises: https://resources.sei.c
 1. Introduces a personal development process. Asks the reader to write several small coding problems and record metrics (time, # defects, etc.), then analyze those metrics for process improvement and planning.
 2. A software group at Maturity Model Level 1 introduces ~7.5 defects/KLOC (p 133). We should demand defect rates an order of magnitude lower. The PSP, and TSP (Team Software Process) describes a way to get there.
 3. Slow down, do a good job on your personal work, and your team will work more efficiently.
+4. I found this book to be inspirational, and deserves a permanent spot on the bookshelf.
 
 ### Preface
-"The record of most development groups is poor, but the record of software groups is particularly bad." (p xiii). "If we are to call ourselves engineers, we must learn to produce quality products on predictable schedules" (p xiv). The author compares the challenege of improving software skills to that of running faster, where you measure your current fitness with metrics, and find ways to improve.
+"The record of most development groups is poor, but the record of software groups is particularly bad." (p xiii). "If we are to call ourselves engineers, we must learn to produce quality products on predictable schedules" (p xiv). The author compares the challenge of improving software skills to that of running faster, where you measure your current fitness with metrics, and find ways to improve.
 
-To learn the PSP, "write a program at each of the six PSP process levels plus an additional two to four programs to master the methods and build the data to support your continuning work" (p xvii).
+To learn the PSP, "write a program at each of the six PSP process levels plus an additional two to four programs to master the methods and build the data to support your continuing work" (p xvii).
 
 ### 1. The Personal Process Strategy
 We need better better personal performance on a software team, like a musician in a symphony. Interestingly, the author wrote 72 programs before "getting the hang" of his own process. 
@@ -103,3 +104,19 @@ Even experienced developers introduce 100 defects / KLOC before compiling.
 
 ### 10. Software Design
 Taking time to design will improve your code quality, but you will move slower in the short term (p 206). Requirements will always change as you design. Divide and conquer problems. Use prototypes. Do deep dives into modules that have uncertainty. Iterate. Talks about levels of design: requirements, system, high-level, detailed, and implementation. Offers strategies for high level design: progressive (sequential), functional-enhancement (flush out a minimal system then improve), and fast-path enhancement strategy (focus on critical performance path first). Talks about design specification trade-offs. It isn't economical to specify every design detail. It would take too much time and be too cumbersome to maintain. It's worth documenting your design decisions, say in a personal journal. It's worth documenting high-level or critical design decisions.
+
+### 11. Design Templates
+We need better designs! 4 ways to record designs... functional specification (e.g. class diagram), operational specification (e.g. use cases), state specification (e.g. state machine), and logical specification (e.g. pseudocode).
+
+### 12. Design Verification
+"For large and complex programs, even the most labor-intensive (design verification) methods are much faster and more effective than testing." (p 253). The biggest hurdle is convincing yourself that you need to do them! Use design standards like product conventions. Aim for reusable code. Verify with "execution tables"... pick a few use cases and step through pseudocode carefully on paper and track every variable to make sure the logic is correct. This can find bugs that are otherwise very hard to find in testing. Aim for "proper" state machines. Loop verification. Notes on automatic design verification tools.
+
+### 13. Process Extensions
+Characterizes an ideal process and talks about transitioning to it. Offers 4 example processes to start with:
+1. Process Development Process (p 299). Process for developing a process.
+2. PSP 3.0 Process (p 301). Process for building a program. "What I found most interesting about the PSP 3.0 process was that, with high-quality increments, this cyclic strategy actually improved my productivity above what I had achieved with small programs." (p 302)
+3. Prototype Experimental Process (p 302). For working with a new environment.
+4. Product Maintenance Process (p 302). For making small modifications to a large legacy system. Has a great metaphor about pulling weeds, and the weeds tend to cluster.
+
+### 14. Using the Personal Software Process
+Current software processes do not scale up for success on large projects. Aim for excellence.
