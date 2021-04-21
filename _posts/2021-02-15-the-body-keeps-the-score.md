@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Body Keeps the Score. Brain, Mind, and Body in the Healing of Trauma."
+title:  "The Body Keeps the Score. Brain, Mind, and Body in the Healing of Trauma"
 category: book
 ---
 
