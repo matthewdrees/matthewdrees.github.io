@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Bullet Journal Method"
+title:  "Book notes: The Bullet Journal Method"
 category: book
 ---
 

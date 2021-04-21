@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "PSP A Self-Improvement Process for Software Engineers"
+title:  "Book notes: PSP A Self-Improvement Process for Software Engineers"
 category: book
 ---
 
