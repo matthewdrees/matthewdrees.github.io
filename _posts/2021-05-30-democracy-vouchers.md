@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Democracy Voucher Program"
-category: random
+category: seattle
 ---
 
 Seattle started the Democracy Voucher Program in 2017 [^2]. I thought it was a clever idea at the time, but I'm only now getting around to actually participating in it.
