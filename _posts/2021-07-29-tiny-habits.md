@@ -10,6 +10,14 @@ By BJ. Fogg
 
 I was picking up some other self-help book from the library but this one caught my eye in the "Peak Picks" section of the local library. Checked out this one instead. He introduces a compelling behavior design model. It's already had some effect... I find myself putting my feet on the floor in the morning and saying "It will be a great day". :-). Although for me instead of 2 push ups after I pee, it's hamstring stretches while I brush my teeth.
 
+I have a few criticisms. First, he relies mostly on individual case studies, often from the same few people. Rather than cite large studies he tends to simply wave a hand at his "research" which I didn't find references to in the book. (He may have that on his website, which he mentions often, but I didn't look there.) Second, his delivery is overly-enthusiastic in a way that makes it feel more like a sales pitch. Lastly, a couple of stories feel unrealistically embellished (offering the kid a "yes" push button on the plane to stop kicking the back of his seat with everyone smiling and happy about it... No way. If I'm the kid I'm thinking "lame" and if I'm the parents I'm thinking "don't interact with my kid"). However, so much of this book otherwise resonates with me that I'm very happy I read it, and highly recommend it to others.
+
+Main takeaways:
+* You change best when you feel good.
+* View your behavior with curiosity, like a scientist, as a puzzle to be solved.
+* Tackle behavior changes first with prompt, then ability, and only lastly with motivation, which is unreliable.
+* Start a habit small. (And even practice it!)
+
 Steps in Behavior Design: (p237)
 1. Clarify the aspiration.
 2. Explore behavior options. (Swarm of Bs.)
@@ -18,14 +26,6 @@ Steps in Behavior Design: (p237)
 5. Find a good prompt.
 6. Celebrate success.
 7. Troubleshoot, iterate, and expand.
-
-I have a few criticisms. First, he relies mostly on individual case studies, often from the same few people. Rather than cite large studies he tends to simply wave a hand at his "research" which I didn't find references to in the book. (He may have that on his website, which he mentions often, but I didn't look there.) Second, his delivery is overly-enthusiastic in a way that makes it feel more like a sales pitch. Lastly, a couple of stories feel unrealistically embellished (offering the kid a "yes" push button on the plane to stop kicking the back of his seat with everyone smiling and happy about it... No way. If I'm the kid I'm thinking "lame" and if I'm the parents I'm thinking "don't interact with my kid"). However, so much of this book otherwise resonates with me that I'm very happy I read it, and highly recommend it to others.
-
-Main takeaways:
-* You change best when you feel good.
-* View your behavior with curiosity, like a scientist, as a puzzle to be solved.
-* Tackle behavior changes first with prompt, then ability, and only lastly with motivation, which is unreliable.
-* Start a habit small. (And even practice it!)
 
 # 1. The Elements of Behavior
 * B=MAP. "Behavior happens when Motivation & Ability & Prompt occur at the same time." (p19).
