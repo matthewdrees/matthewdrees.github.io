@@ -27,7 +27,7 @@ twitter_username:
 github_username: matthewdrees
 
 # Build settings
-markdown    : kramdown
+markdown    : CommonMark
 highlighter : rouge
 
 # Sass configuration
@@ -39,6 +39,10 @@ plugins:
   - jekyll-sitemap
   - bourbon
   - jekyll-paginate
+
+commonmark:
+  options: ["SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table"]
 
 # navbar pages
 navbar:
