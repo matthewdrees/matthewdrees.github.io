@@ -18,9 +18,10 @@ Reduce the cardinality of your input data by hashing them into bins. Theoretical
 Note on hashed_feature.ipynb... It doesn't run out of the box. I had to add lines to authenticate_user, create a BigQuery project in google console, and add that project name to the bigquery call with --project.
 
 ### 2: Embeddings
-Map high-cardinality input data into a lower-dimensional representation. Good rules of thumb for reduction are the 4th root(N) through 1.6 * sqrt(N). Example uses TensorFlow.keras.layers.Embedding(output_dim = 2) to reduce 6x6 natality dataset to 6x2 dense vector. The secret is that the 6x6 matrix variables aren't fully independent.
+Map high-cardinality input data into a lower-dimensional representation. Good rules of thumb for reduction are the 4th root(N) through 1.6 * sqrt(N). Example uses TensorFlow.keras.layers.Embedding(output_dim = 2) to reduce 6x6 natality dataset to 6x2 dense vector. The secret is that the 6x6 matrix variables aren't fully independent. The lower-dimensional representation is interesting because it shows relationships.
 
-A text embedding example using nytimes headlines reduced a 96k x 27 input matrix to 96k x 10. Also interesting is it used a reduce_mean lambda layer as well as a 
+A text embedding example using nytimes, github, and techcrunch headlines reduced a 47k x 27 input matrix (number of unique words x max headline word length) to 47k x 10 dense(r) matrix. Interestingly, it did some further processing with a reduce_mean lambda layer and represented in a dense softmax layer.
+
 
 Note on embeddings.ipynb... had to put the "data" folder on my google drive, then mount it, and update paths to "./drive/MyDrive/data/..".
 
@@ -31,5 +32,36 @@ Feature engineering by making combinations of input values separate features. Th
 
 Simple contrived example is binary classifier with data that is in opposite quadrants of 2-dimensional graph. More complex example is New York taxi ride data, that turns pickup timestamps into hour intervals for hour/day (7*24 = 168 dimension 1 hot encoded vector). It's recommended to pass "bucketized" feature crosses like this through an Embedding to reduce the dimensionality.
 
-It is recommended to pass a feature cross through an L1 or L2 regularization.
+It is recommended to pass a feature cross through an L1 or L2 regularization. Don't cross highly-correlated features.
 
+### 4: Multimodal Input
+Represent different types of data by concatenating all available data representations.
+
+
+### Running *.ipynb files
+None of the *.pynb files ran "out of the box" for me.
+
+Always had to add this:
+
+    from google.colab import auth
+    auth.authenticate_user()
+
+If using local data I copied it to my google drive and mounted it...
+
+    from google.colab import drive
+    drive.mount('/content/drive')
+
+... and tested the path...
+
+    ls drive/MyDrive/data
+    babyweight_eval.csv    babyweight_train.csv babyweight_sample.csv  titles_full.csv
+
+... and added "drive/MyDrive/" to paths for opening the files.
+
+BigQuery required creating a BigQuery project on Google Console and adding the project name to bigquery calls:
+
+    bq = bigquery.Client(project='project-name-344319')
+
+    %%bigquery --project project-name-344319
+
+By default the notebooks run without a GPU. :-(. I ran into a problem with creating the first model in BigQuery on feature_cross.ibpynb, it ran for 29 minutes before I stopped it. Edit -> Notebook settings -> Hardware Accelerator to enable GPU.
