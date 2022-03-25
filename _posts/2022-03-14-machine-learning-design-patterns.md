@@ -35,7 +35,7 @@ Simple contrived example is binary classifier with data that is in opposite quad
 It is recommended to pass a feature cross through an L1 or L2 regularization. Don't cross highly-correlated features.
 
 ### 4: Multimodal Input
-Represent different types of data by concatenating all available data representations.
+Represent different types of data by concatenating all available data representations. Bag of Words (BOW) vs embeddings for text representation. Images can be individual pixels or a tiled structure like convolutional neural networks.
 
 
 ### Running *.ipynb files
@@ -64,4 +64,21 @@ BigQuery required creating a BigQuery project on Google Console and adding the p
 
     %%bigquery --project project-name-344319
 
-By default the notebooks run without a GPU. :-(. I ran into a problem with creating the first model in BigQuery on feature_cross.ibpynb, it ran for 29 minutes before I stopped it. Edit -> Notebook settings -> Hardware Accelerator to enable GPU.
+By default the notebooks run without a GPU. :-(.  Edit -> Notebook settings -> Hardware Accelerator to enable GPU.
+
+#### DP3, feature_cross.ipynb
+This line ran for 29 minutes before I stopped it:
+
+    CREATE OR REPLACE MODEL babyweight.natality_model ...
+
+There isn't a progress bar or logging that I'm aware of in the notebook or on google console. Here's what I did:
+* Moved the query from jupyter notebook over to a google console BigQuery query. It said there was a syntax issue in the query. When I removed the backtick quotes from 'babyweight.natality_model' and ran again it went away.
+* I don't know if this ultimately made a difference in execution time but I moved the cutoff year from 2000 to 2006, which reduced the database from 33 billion rows to 8 million.
+* After that the query took 1 hour, 52 minutes! But it seemed to work. The df.head() call in the next code block gave reasonable rmse values.
+* Shortly after this I hit a 403 error data usage quota. I went ahead and signed up for billing and $300 credit from google console and I was able to keep going. (They got me!)
+* Running the Ny taxi data with an L2 regression the RMSE got slightly worse than without!
+
+#### DP4, mixed_representation.ipynb
+
+Bug on this line. "tiled_input" should be "tiled_layer"?
+    mixed_image_tabular_model = Model(inputs=[image_tabular_input, tiled_input], outputs=merged_image_output)
