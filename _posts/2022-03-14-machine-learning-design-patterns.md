@@ -22,9 +22,6 @@ Map high-cardinality input data into a lower-dimensional representation. Good ru
 
 A text embedding example using nytimes, github, and techcrunch headlines reduced a 47k x 27 input matrix (number of unique words x max headline word length) to 47k x 10 dense(r) matrix. Interestingly, it did some further processing with a reduce_mean lambda layer and represented in a dense softmax layer.
 
-
-Note on embeddings.ipynb... had to put the "data" folder on my google drive, then mount it, and update paths to "./drive/MyDrive/data/..".
-
 This design pattern looks like something you have to do all the time. Very useful.
 
 ### 3: Feature Cross
@@ -37,6 +34,20 @@ It is recommended to pass a feature cross through an L1 or L2 regularization. Do
 ### 4: Multimodal Input
 Represent different types of data by concatenating all available data representations. Bag of Words (BOW) vs embeddings for text representation. Images can be individual pixels or a tiled structure like convolutional neural networks.
 
+### 5: Reframing
+Change the representation of the output of a machine learning problem, such as regression to classification.
+
+The example given was "male babies born to 25 year old mothers at 38 weeks" from the natality dataset returned a normal distribution around 7.5 pounds. As a regression problem the error is a standard deviation. If we reframe this as a classification model with weight ranges we get something more like a probability density function (PDF).
+
+They gave an example that works in the opposite way, taking a classification model for movie recommendations and turning it into a regression model, but I couldn't make sense of it. Another possibility would be to use latitude/longitude instead of cities. It can also be useful to use the regression model as an input to a multitask learning model. My takeaway here is usually you will reframe regression models into classification models.
+
+If your output distribution is "sharp", you should stick with a regression.
+
+If you want less error in your classification, you need more buckets.
+
+Instead of changing between regression and classification, do both and use a multitask learning model.
+
+Interesting things learned: Tweedie distribution and Sigmoid function.
 
 ### Running *.ipynb files
 None of the *.pynb files ran "out of the box" for me.
@@ -58,11 +69,13 @@ If using local data I copied it to my google drive and mounted it...
 
 ... and added "drive/MyDrive/" to paths for opening the files.
 
+Mounting my google drive also solved authentication problems when running bq.query() calls.
+
 BigQuery required creating a BigQuery project on Google Console and adding the project name to bigquery calls:
 
-    bq = bigquery.Client(project='project-name-344319')
+    bq = bigquery.Client(project='project-name-number')
 
-    %%bigquery --project project-name-344319
+    %%bigquery --project project-name-number
 
 By default the notebooks run without a GPU. :-(.  Edit -> Notebook settings -> Hardware Accelerator to enable GPU.
 
@@ -81,4 +94,5 @@ There isn't a progress bar or logging that I'm aware of in the notebook or on go
 #### DP4, mixed_representation.ipynb
 
 Bug on this line. "tiled_input" should be "tiled_layer"?
+
     mixed_image_tabular_model = Model(inputs=[image_tabular_input, tiled_input], outputs=merged_image_output)
