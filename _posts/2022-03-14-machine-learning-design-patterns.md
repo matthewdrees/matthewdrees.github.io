@@ -49,8 +49,8 @@ Instead of changing between regression and classification, do both and use a mul
 
 Interesting things learned: Tweedie distribution and Sigmoid function.
 
-### Running *.ipynb files
-None of the *.pynb files ran "out of the box" for me.
+### Notes on running *.ipynb files on google colab
+None of the design pattern *.pynb files ran "out of the box" for me.
 
 Always had to add this:
 
@@ -71,27 +71,26 @@ If using local data I copied it to my google drive and mounted it...
 
 Mounting my google drive also solved authentication problems when running bq.query() calls.
 
-BigQuery required creating a BigQuery project on Google Console and adding the project name to bigquery calls:
+BigQuery Client calls required adding the project name:
 
     bq = bigquery.Client(project='project-name-number')
-
     %%bigquery --project project-name-number
 
-By default the notebooks run without a GPU. :-(.  Edit -> Notebook settings -> Hardware Accelerator to enable GPU.
+By default the notebooks run without a GPU. In hindsight I didn't need it though. Most calls run in < 10 seconds. FWIW: Edit -> Notebook settings -> Hardware Accelerator to enable GPU. 
 
-#### DP3, feature_cross.ipynb
+#### DP3, feature_cross.ipynb notes
 This line ran for 29 minutes before I stopped it:
 
     CREATE OR REPLACE MODEL babyweight.natality_model ...
 
 There isn't a progress bar or logging that I'm aware of in the notebook or on google console. Here's what I did:
-* Moved the query from jupyter notebook over to a google console BigQuery query. It said there was a syntax issue in the query. When I removed the backtick quotes from 'babyweight.natality_model' and ran again it went away.
+* Moved the query from jupyter notebook over to a google console BigQuery query. It said there was a syntax issue in the query. When I removed the backtick quotes from 'babyweight.natality_model' and ran again it went away. This didn't turn out to be a problem on colab though.
 * I don't know if this ultimately made a difference in execution time but I moved the cutoff year from 2000 to 2006, which reduced the database from 33 billion rows to 8 million.
 * After that the query took 1 hour, 52 minutes! But it seemed to work. The df.head() call in the next code block gave reasonable rmse values.
-* Shortly after this I hit a 403 error data usage quota. I went ahead and signed up for billing and $300 credit from google console and I was able to keep going. (They got me!)
+* Shortly after this I hit a 403 error data usage quota. I went ahead and signed up for billing and $300 credit from google console and I was able to keep going. (They got me!) Note that enabling GPU didn't appear to help speed up this call, it warned that the GPU wasn't being used so I killed it after a couple of minutes. I didn't let it run so don't know for sure if it eventually helped.
 * Running the Ny taxi data with an L2 regression the RMSE got slightly worse than without!
 
-#### DP4, mixed_representation.ipynb
+#### DP4, mixed_representation.ipynb notes
 
 Bug on this line. "tiled_input" should be "tiled_layer"?
 
