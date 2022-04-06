@@ -49,6 +49,21 @@ Instead of changing between regression and classification, do both and use a mul
 
 Interesting things learned: Tweedie distribution and Sigmoid function.
 
+### 6: Multilabel
+If your data can have more than 1 label (e.g. an image can have a cat and a dog), use a sigmoid function instead of softmax.
+
+For a binary classifier, use sigmoid with size 1 instead of softmax with size 2 as an optimization.
+
+For sigmoid functions use a binary crossentropy loss function.
+
+Need a threshold for processing sigmoid results. Rule of thumb is number of specific tags / number of total examples. Should also explore S-cut or F-measure.
+
+Try to have training data with an equal number of labels and combinations of labels.
+
+Optionally could use several individual binary classifier models rather than one multilabel model.
+
+Something else that occurred to me... "class" and "label" mean nearly the same thing, but are used in different contexts.
+
 ### Notes on running *.ipynb files on google colab
 None of the design pattern *.pynb files ran "out of the box" for me.
 
@@ -76,7 +91,7 @@ BigQuery Client calls required adding the project name:
     bq = bigquery.Client(project='project-name-number')
     %%bigquery --project project-name-number
 
-By default the notebooks run without a GPU. In hindsight I didn't need it though. Most calls run in < 10 seconds. FWIW: Edit -> Notebook settings -> Hardware Accelerator to enable GPU. 
+By default the notebooks run without a GPU. The first notebook that needed it was DP6 multilabel.ipynb. Most calls run in < 10 seconds. FWIW: Edit -> Notebook settings -> Hardware Accelerator to enable GPU. 
 
 #### DP3, feature_cross.ipynb notes
 This line ran for 29 minutes before I stopped it:
@@ -95,3 +110,8 @@ There isn't a progress bar or logging that I'm aware of in the notebook or on go
 Bug on this line. "tiled_input" should be "tiled_layer"?
 
     mixed_image_tabular_model = Model(inputs=[image_tabular_input, tiled_input], outputs=merged_image_output)
+
+#### DP6, multilable.ipynb notes
+GPU acceleration helped speed this one up. It otherwise worked out of the box!
+
+It had an anti-pattern example (do like), using softmax for a binary classifier instead of sigmoid. The optimization did run slightly faster (7 seconds instead of 8).
