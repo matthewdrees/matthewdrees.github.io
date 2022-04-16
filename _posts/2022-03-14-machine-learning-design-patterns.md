@@ -12,13 +12,13 @@ Book club book with my sister.
 
 Chapter 1, The Need for Machine Learning Design Patterns. Machine learning has it's own jargon. There are dozens of italicized words to learn.
 
-# 1: Hashed Feature
+## 1: Hashed Feature
 
 Reduce the cardinality of your input data by hashing them into bins. Theoretically useful if you have incomplete vocabulary, high cardinality, or cold start issues. The example given was measuring flight delays by airport codes. There are a lot of airports (high cardinality), some of which might not be in your training data (incomplete vocabulary), and new airports may come online (cold start). However, you may randomly lump high-use airports with low-use one, making your model less interesting. We struggled to think of a use case where you would want random bins. Therefore we've renamed this pattern to "Dumb Embeddings".
 
 Note on hashed_feature.ipynb... It doesn't run out of the box. I had to add lines to authenticate_user, create a BigQuery project in google console, and add that project name to the bigquery call with --project.
 
-# 2: Embeddings
+## 2: Embeddings
 
 Map high-cardinality input data into a lower-dimensional representation. Good rules of thumb for reduction are the 4th root(N) through 1.6 * sqrt(N). Example uses TensorFlow.keras.layers. Embedding(output_dim = 2) to reduce 6x6 natality dataset to 6x2 dense vector. The secret is that the 6x6 matrix variables aren't fully independent. The lower-dimensional representation is interesting because it shows relationships.
 
@@ -26,7 +26,7 @@ A text embedding example using nytimes, github, and techcrunch headlines reduced
 
 This design pattern looks like something you have to do all the time. Very useful.
 
-# 3: Feature Cross
+## 3: Feature Cross
 
 Feature engineering by making combinations of input values separate features. This allows you to use a simpler (i.e. Linear) model.
 
@@ -34,11 +34,11 @@ Simple contrived example is binary classifier with data that is in opposite quad
 
 It is recommended to pass a feature cross through an L1 or L2 regularization. Don't cross highly-correlated features.
 
-# 4: Multimodal Input
+## 4: Multimodal Input
 
 Represent different types of data by concatenating all available data representations. Bag of Words (BOW) vs embeddings for text representation. Images can be individual pixels or a tiled structure like convolutional neural networks.
 
-# 5: Reframing
+## 5: Reframing
 
 Change the representation of the output of a machine learning problem, such as regression to classification.
 
@@ -54,7 +54,7 @@ Instead of changing between regression and classification, do both and use a mul
 
 Interesting things learned: Tweedie distribution and Sigmoid function.
 
-# 6: Multilabel
+## 6: Multilabel
 
 If your data can have more than 1 label (e.g. an image can have a cat and a dog), use a sigmoid function instead of softmax.
 
@@ -70,7 +70,7 @@ Optionally could use several individual binary classifier models rather than one
 
 Something else that occurred to me... "class" and "label" mean nearly the same thing, but are used in different contexts.
 
-# 7: Ensembles
+## 7: Ensembles
 
 Money quote: "No machine learning model is perfect" (p100)
 
@@ -79,6 +79,8 @@ The main ML model error parts:
 2. Bias: inability to figure out relationship between features and labels. High bias -> *underfit*.
 3. Variance: can't handle new, unseen data. High variance -> *overfit*.
 
+Per our book club discussion: It seems like *underfit* vs *overfit* could be a single value instead of bias and variance, especially since these words are used in many other contexts anyways.
+
 Solutions:
 1. Bagging: (bootstrap aggregating). Train several models of the same type in parallel, and aggregate their outputs. Useful for reducing variance (overfitting). Good example is random forrest.
 2. Boosting: Use iterative models in series that have more "capacity" than the individual models. Reduces bias (underfitting).
@@ -86,7 +88,14 @@ Solutions:
 
 Downsides: Increased complexity & design time. Harder to explain how the whole thing works.
 
-# Notes on running *.ipynb files on google colab
+## 8: Cascade
+Cascade is a specific case of the Ensemble pattern where you have a variable that has a normal case and a rare but much different case.
+
+Downside in addition to the Ensemble downsides is that your initial classifier won't be perfect.
+
+Much of this design pattern is spent warning you against using it.
+
+## Notes on running *.ipynb files on google colab
 
 None of the design pattern *.pynb files ran "out of the box" for me.
 
@@ -116,7 +125,7 @@ BigQuery Client calls required adding the project name:
 
 By default the notebooks run without a GPU. The first notebook that needed it was DP6 multilabel.ipynb. Most calls run in < 10 seconds. FWIW: Edit -> Notebook settings -> Hardware Accelerator to enable GPU. 
 
-## DP3, feature_cross.ipynb notes
+### DP3, feature_cross.ipynb notes
 
 This line ran for 29 minutes before I stopped it:
 
@@ -129,20 +138,28 @@ There isn't a progress bar or logging that I'm aware of in the notebook or on go
 * Shortly after this I hit a 403 error data usage quota. I went ahead and signed up for billing and $300 credit from google console and I was able to keep going. (They got me!) Note that enabling GPU didn't appear to help speed up this call, it warned that the GPU wasn't being used so I killed it after a couple of minutes. I didn't let it run so don't know for sure if it eventually helped.
 * Running the Ny taxi data with an L2 regression the RMSE got slightly worse than without!
 
-## DP4, mixed_representation.ipynb notes
+### DP4, mixed_representation.ipynb notes
 
 Bug on this line. "tiled_input" should be "tiled_layer"?
 
     mixed_image_tabular_model = Model(inputs=[image_tabular_input, tiled_input], outputs=merged_image_output)
 
-## DP6, multilable.ipynb notes
+### DP6, multilable.ipynb notes
 
 GPU acceleration helped speed this one up. It otherwise worked out of the box!
 
 It had an anti-pattern example (do like), using softmax for a binary classifier instead of sigmoid. The optimization did run slightly faster (7 seconds instead of 8).
 
-## DP7, ensemble_methods.ipynb notes
+### DP7, ensemble_methods.ipynb notes
 
 GPU helped again. Training the three models took 7.5 mins with the GPU. Fitting the ensemble model took 3.5 minutes.
 
 The last step the initial Validation RMSE showed as 1.4, but when I ran it updated to 7.4. Hmmm.
+
+### DP8, cascade.ipynb notes
+
+Had to set up AI Platform Pipelines and had to add quite a few lines for authentication to get stuff to run.
+
+Also had to install kfp and restart the runtime.
+
+    !pip3 install kfp --upgrade --user
