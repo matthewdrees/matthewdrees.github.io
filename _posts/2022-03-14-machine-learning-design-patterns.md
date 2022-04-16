@@ -89,11 +89,38 @@ Solutions:
 Downsides: Increased complexity & design time. Harder to explain how the whole thing works.
 
 ## 8: Cascade
+
 Cascade is a specific case of the Ensemble pattern where you have a variable that has a normal case and a rare but much different case.
 
 Downside in addition to the Ensemble downsides is that your initial classifier won't be perfect.
 
 Much of this design pattern is spent warning you against using it.
+
+## 9: Neutral Class
+
+Short and sweet! In a classifier have a distinct "maybe" class. Useful for cases where experts disagree (example given is doctors prescribing ibuprofen vs acetaminophen) or gray areas like 5-7 range on customer satisfaction scores.
+
+Also learned about "labelling services".
+
+## 10: Rebalancing
+
+This was a big one, though I'm not sure how you would break it up into separate design patterns. What to do if you have an labelling imbalance in your data? This assumes you have enough data in the first place.
+
+Choosing an evaluation metric:
+* Accuracy might not be acceptable. E.g. assuming 99% of transactions aren't fraud, a model that doesn't detect any fraud is 99% accurate.
+* Precision: correct positive classifications / all positive classifications.
+* Recall: correct positive classifications / actual positive classifications.
+* F-measure: 0-1 description of accuracy combining precision and recall.
+
+Introduces the Confusion Matrix.
+
+Downsampling removes abundantly labelled data. Upsampling creates new data from existing data. SMOTE combines both. Weighted classes uses weights to account for different ratios of labelled data.
+
+For regression models you can use "errors as a signal" or clustering data for anomaly detection. You can use clustering for unsupervised learning to create labelled data for input to another model.
+
+There are some great tips in the "combining different techniques" and "choosing a model" sections.
+
+Importance of explainability: SHAP, "What-if Tool", etc, explains the impacts of various inputs on the output.
 
 ## Notes on running *.ipynb files on google colab
 
@@ -163,3 +190,7 @@ Had to set up AI Platform Pipelines and had to add quite a few lines for authent
 Also had to install kfp and restart the runtime.
 
     !pip3 install kfp --upgrade --user
+
+### DP10, rebalancing.ipynb notes
+
+Python errors in the last few calls. "df" is not defined, and QueryJob isn't subscriptable from outlier_pred.
