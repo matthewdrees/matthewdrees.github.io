@@ -122,6 +122,24 @@ There are some great tips in the "combining different techniques" and "choosing 
 
 Importance of explainability: SHAP, "What-if Tool", etc, explains the impacts of various inputs on the output.
 
+## 11: Useful Overfitting
+
+I really liked this one. Usually you want to avoid overfitting, but sometimes not! In cases like a mathematical equations (they used partial differential equation solution as an example) it may be more efficient to train a ML model than use numerical methods like Runge-Kutta. Think of it like a lookup table with unwieldy amount of input data, the ML model can interpolate and run faster. This only works if you have no unseen data.
+
+Monte Carlo methods. The danger of overfitting in this case comes from "model complexity", not noise. Use a smaller model.
+
+Distilling knowledge of neural networks. A larger model can be easier to train, even though a smaller model is capable. Train a larger model first, and then transfer that knowledge by overfitting to a smaller model.
+
+Overfitting a batch. A model should be capable of overfitting. Try to overfit on purpose as a sanity check that the model can work.
+
+Other stuff learned:
+* Universal Approximation Theorem. A ML model is capable of representing a "wide variety of interesting functions when given appropriate weights".
+* Keras training loop: compile, fit, evaluate.
+* Stochastic gradient descent (SGD).
+* Deep Galerkin Method: ML for solving partial differential equations.
+
+Money Quote: "In practice, training a Neural Network requires a lot of experimentation." (p148). Lol, no kidding.
+
 ## Notes on running *.ipynb files on google colab
 
 None of the design pattern *.pynb files ran "out of the box" for me.
@@ -194,3 +212,7 @@ Also had to install kfp and restart the runtime.
 ### DP10, rebalancing.ipynb notes
 
 Python errors in the last few calls. "df" is not defined, and QueryJob isn't subscriptable from outlier_pred.
+
+### DP11, overfitting.ipynb notes
+
+Quick one! Be sure to use the chapter 4 data folder instead of the chapter 3 data folder. Different data even though files are same name and size.
