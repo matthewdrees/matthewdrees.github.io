@@ -140,6 +140,18 @@ Other stuff learned:
 
 Money Quote: "In practice, training a Neural Network requires a lot of experimentation." (p148). Lol, no kidding.
 
+## 12: Checkpoints
+
+It can take hours or days to train a model. Save off instances as you go. Typically on an epoch, but possibly in smaller epoch chunks called steps.
+
+Early stopping and checkpoint selection. You typically stop training when your loss function reaches a certain point. Alternatively you could continue training but save off checkpoints, inspect the loss function of each, and choose the optimal one. Often a model can settle in on a low loss for common cases, then go up and down again as it tunes for rare cases. Early stopping can be cheaper and checkpoint selection can get higher accuracy.
+
+Offers L2 regression as a way to go instead of checkpoints, ideally in cases of a "well behaved" training loop where the loss plateaus.
+
+Fine tuning. On new data can get a "warm start" working from a checkpoint. You might want to use an earlier checkpoint that didn't fine tune on previous rare cases.
+
+Many tricks for large amounts of data that don't fit in memory.
+
 ## Notes on running *.ipynb files on google colab
 
 None of the design pattern *.pynb files ran "out of the box" for me.
@@ -216,3 +228,9 @@ Python errors in the last few calls. "df" is not defined, and QueryJob isn't sub
 ### DP11, overfitting.ipynb notes
 
 Quick one! Be sure to use the chapter 4 data folder instead of the chapter 3 data folder. Different data even though files are same name and size.
+
+### DP12, checkpoints.ipynb notes
+
+Had to install tensorflow_io
+
+    !pip3 install tensorflow_io
