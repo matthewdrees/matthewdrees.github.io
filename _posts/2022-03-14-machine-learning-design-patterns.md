@@ -152,6 +152,40 @@ Fine tuning. On new data can get a "warm start" working from a checkpoint. You m
 
 Many tricks for large amounts of data that don't fit in memory.
 
+## 13: Transfer Learning
+
+Take a previously-trained model and solve a similar problem with a smaller dataset.
+
+Learned about [ImageNet](https://www.image-net.org/index.php). 14 million labelled images.
+
+The shortest path to glory is to freeze the weights up to the "bottleneck" (i.e. penultimate) layer and train only the output layer with new data. This is called "feature extraction". Optionally you could let the weights up to any of the layers to retrain, which is called "fine tuning". It's not advisable to let the lowest layers retrain, e.g. image classification because they correspond to the physical world (edges, shapes). You can do a binary search for the proper layer to freeze with "progressive fine tuning".
+
+Regarding tabular data, this approach works better at the sentence level than the word level because you have context. See TabNet, Google's Universal Sentence Encoder, and BERT.
+
+## 14: Distribution Strategy
+
+Distribute the model training loop over multiple workers.
+
+It can take days for some models to train. Offload this onto multiple servers. Can do synchronously or asynchronously.
+
+Use specialized hardware for faster performance at reduced costs: GPUs, ASICs, FPGAs, TPUs (Tensor Processing Unit, an ASIC developed by Google for AI).
+
+Interesting note about batch sizes... Larger batch sizes are more efficient for reduced I/O and taking advantage of hardware, however larger batch sizes can lead to reduced SGD convergence and accuracy. LAMB is a method for finding the sweet spot.
+
+## 15: Hyperparameter Tuning
+
+How to pick model architecture parameters (e.g. Number of layers, neurons/layer, decision tree depth) or model training parameters (e.g. number of epochs, learning rate, batch size)?
+
+You could manually try different hyperparameter combinations (grid search), but takes a lot of time and can have combinatorial explosion of parameters.
+
+Bayesian optimization: Try hyperparameter combinations with a faster "surrogate function" rather than model training. Usually use a Guassian process (Kriging?) or tree-structure Parzen estimator to take hyperparameters as input and a metric as output (accuracy, error).
+
+Genetic algorithms: Instead of using a "surrogate function", you randomly take some combinations of hyperparameters, train the model a bit, and see what you have. Somehow the stronger combinations survive based on survival of the fittest. This isn't as well supported as Bayesian optimization.
+
+Note the keras BayesianOptimization in hyperparameter_tuning.ipynb took a long time for me... 30 mins. I was using GPU hardware acceleration. The takeaway for me is even if you're using tricks the hyperparameter tuning can take a long time.
+
+Like this DP! I bet one is often left wondering if a model would be better with different hyperparamters but didn't have the time to try.
+
 ## Notes on running *.ipynb files on google colab
 
 None of the design pattern *.pynb files ran "out of the box" for me.
