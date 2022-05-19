@@ -186,6 +186,14 @@ Note the keras BayesianOptimization in hyperparameter_tuning.ipynb took a long t
 
 Like this DP! I bet one is often left wondering if a model would be better with different hyperparamters but didn't have the time to try.
 
+## 16: Stateless Serving Function
+
+Only deploy what you need for inference. Can deploy as a REST API with outputs that only depend on inputs (i.e. no state).
+
+Good pragmatic tips in this one, though with the examples given I struggle to see how you would deploy with state, so the general advice here seems like common sense.
+
+logit: function that takes -inf to +inf and returns 0 to 1.
+
 ## Notes on running *.ipynb files on google colab
 
 None of the design pattern *.pynb files ran "out of the box" for me.
