@@ -194,11 +194,23 @@ Good pragmatic tips in this one, though with the examples given I struggle to se
 
 logit: function that takes -inf to +inf and returns 0 to 1.
 
+## 17: Batch Serving
+
+If you have to process many inferences, it's cheaper and more efficient to batch them. The example uses BigQuery which seems to batch automatically if necessary (I didn't see any special syntax like "batch").
+
+Suggests using Apache Beam for serving if need pre/post processing (e.g. for images) or keep state (e.g. rolling average or counter).
+
+Can cache results of a batch, e.g. run recommendations for all users at once (every so often) and store in a database.
+
+Lambda Architecture: serving architecture that offers both single and batch processing. Google offers single processing through Cloud AI Platform Predictions and batch through BigQuery, can use same model in either. In some ways this book feels like and advertisement for google. Also, you know you've made it as a proper intellectual field once you've defined "lambda". Wikipedia at this time offers 16 different meanings for lambda. Sadly no mention yet for lambda architecture in machine learning.
+
+IMHO the "positive" complaint example from the CFPB database should have been more amusing. (Though maybe I just got my hopes up.)
+
 ## Notes on running *.ipynb files on google colab
 
-None of the design pattern *.pynb files ran "out of the box" for me.
+Very few of the design pattern *.pynb files ran "out of the box" for me.
 
-Always had to add this:
+Sometimes had to authenticate:
 
     from google.colab import auth
     auth.authenticate_user()
