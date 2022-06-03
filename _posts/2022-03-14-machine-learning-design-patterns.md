@@ -206,6 +206,18 @@ Lambda Architecture: serving architecture that offers both single and batch proc
 
 IMHO the "positive" complaint example from the CFPB database should have been more amusing. (Though maybe I just got my hopes up.)
 
+## 18: Continued Model Evaluation
+
+"Deployment is not the end of a machine learning model's life cycle." (p220)
+
+A deployed model might become stale over time due to concept drift or data drift.
+
+When you deploy you save off some random inferences, compare them to ground truth, and decide to retrain based on a threshold or period of time. The decision on when/if to retrain is based heavily on domain knowledge, business case, and costs.
+
+Ground truth can be done by using human labelling services (which sounds a bit inhuman to me) or tricking your users into giving you that information, e.g. having them provide a rating or being able to measure their decision (abandoning a shopping cart).
+
+Google and TFX offer tools to help monitor deployed models. Facets provides data visualization.
+
 ## Notes on running *.ipynb files on google colab
 
 Very few of the design pattern *.pynb files ran "out of the box" for me.
