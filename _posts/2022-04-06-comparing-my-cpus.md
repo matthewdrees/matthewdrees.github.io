@@ -18,7 +18,7 @@ Some comparisons of the CPUs that I own, and a couple that I might purchase if b
 | L2 cache | 512 (KB)         | 8 MB            | 256 KB            | 256 KB              | 512 KB             | 12 MB         |
 | L3 cache | 8 MB             | N/A             | 6 MB              | N/A                 | 32 MB              | N/A           |
 | TDP (watts) | 65            | 6               | 95                | 5                   | 65                 | 15            |
-| CPU Mark [^8] | 15650       | 22109           | 4062              | 244                 | 22103  | 14752     |               |
+| CPU Mark [^8] | 15650       | 4723            | 4062              | 244                 | 22103  | 14752     |               |
 | Geekbench 5 (single core) [^9] | 944          | 1107              | 700                 | 48     | 1615      | 1730          |
 | Geekbench 5 (multi core) [^9]  | 6252         | 2509              | 2214                | 89     | 8153      | 7550          |
 | Time to build Linux (seconds) [^10] | 118 | ? | 314               | 2941*               | 110    | ?                         |
@@ -38,7 +38,6 @@ Some comparisons of the CPUs that I own, and a couple that I might purchase if b
 * The number of transistors on the new Apple M1 is insane at 16 billion.
 * The recent Apple M1 does similar benchmarks to comparable x86_64 chips but with 1/3 the power consumption!
 * It's interesting to see the tech specs but CPUs are so much more complicated than clock frequency, cache size, etc. It's important to have the benchmark scores, especially for applications that are interesting to you.
-* I can't believe that the A12 Bionic in my phone out-performs the Ryzen 7 desktop I bought in the same year in CPU Mark!
 * Regarding Linux build time:
   + There was a big jump from my i5 to my current Ryzen 7, 314 seconds to 118 (easy enough, twice as many cores!), though with the new Ryzen 5 5600X only modest improvement to 110 seconds.
   + I'm surprised that OpenBenchmarking hasn't measured this on M1 yet, if nothing else as a fun data point.
