@@ -218,6 +218,20 @@ Ground truth can be done by using human labelling services (which sounds a bit i
 
 Google and TFX offer tools to help monitor deployed models. Facets provides data visualization.
 
+## 19: Two-Phase Predictions
+
+Continue to provide a model in the case of reduced server availability (server or network is down) by putting part or all of the model on the "edge" (user) device.
+
+Examples:
+* Google Translate. There is a great example of reduced quality, but available, translations from the edge device.
+* Siri on iPhone. It would be expensive to constantly monitor audio over network listening for name.
+
+Smaller models typically work better for edge devices, but with possibly reduced accuracy.
+
+Quantization: convert a model to a smaller model.
+
+Clever little edge devices for around $100: Coral Edge TPU and Jetson Nano.
+
 ## Notes on running *.ipynb files on google colab
 
 Very few of the design pattern *.pynb files ran "out of the box" for me.
