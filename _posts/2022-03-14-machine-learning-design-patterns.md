@@ -236,6 +236,12 @@ Clever little edge devices for around $100: Coral Edge TPU and Jetson Nano.
 
 Have the user provide a key along with input features, and return the same key with the associated output features. The key can be a simple incrementing number, though take care not to have collisions if you have multiple clients.
 
+## 21: Transform
+
+Separate inputs, features, and transforms to make it easier to move a model to production.
+
+Models take features as inputs, which aren't the same as the inputs given by clients. The example given is having the input value "3" for day of week, which could be a different day of the week depending on what day the week stars on. This is called "training-serving skew" and makes moving to production difficult. Make sure you serve on production with the same input->feature transforms you used to train with.
+
 ## Notes on running *.ipynb files on google colab
 
 Very few of the design pattern *.pynb files ran "out of the box" for me.
