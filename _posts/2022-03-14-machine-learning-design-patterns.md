@@ -232,6 +232,10 @@ Quantization: convert a model to a smaller model.
 
 Clever little edge devices for around $100: Coral Edge TPU and Jetson Nano.
 
+## 20: Keyed Predictions
+
+Have the user provide a key along with input features, and return the same key with the associated output features. The key can be a simple incrementing number, though take care not to have collisions if you have multiple clients.
+
 ## Notes on running *.ipynb files on google colab
 
 Very few of the design pattern *.pynb files ran "out of the box" for me.
