@@ -8,53 +8,63 @@ category: book
 
 I actually bought this book a decade ago. I recall doing the first project and measuring the PSP0 statistics and finding value in the process, then I let the book languish on the shelf. Time for another go.
 
-Here's the link to the programming and report exercises: https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=530425. In the zip file: Student Workbook/PSP Student Workbook.2006.10.07/PSP Course Materials/ASGKIT PROG*.doc. (The link in the book doesn't work anymore.)
+Here's the link to the programming and report exercises: <https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=530425>. In the zip file: Student Workbook/PSP Student Workbook.2006.10.07/PSP Course Materials/ASGKIT PROG*.doc. (The link in the book doesn't work anymore.)
 
 ### Key Takeaways
+
 1. Introduces a personal development process. Asks the reader to write several small coding problems and record metrics (time, # defects, etc.), then analyze those metrics for process improvement and planning.
 2. A software group at Maturity Model Level 1 introduces ~7.5 defects/KLOC (p 133). We should demand defect rates an order of magnitude lower. The PSP, and TSP (Team Software Process) describes a way to get there.
 3. Slow down, do a good job on your personal work, and your team will work more efficiently.
 4. I found this book to be inspirational, and deserves a permanent spot on the bookshelf.
 
 ### Preface
+
 "The record of most development groups is poor, but the record of software groups is particularly bad." (p xiii). "If we are to call ourselves engineers, we must learn to produce quality products on predictable schedules" (p xiv). The author compares the challenge of improving software skills to that of running faster, where you measure your current fitness with metrics, and find ways to improve.
 
 To learn the PSP, "write a program at each of the six PSP process levels plus an additional two to four programs to master the methods and build the data to support your continuing work" (p xvii).
 
 ### 1. The Personal Process Strategy
+
 We need better better personal performance on a software team, like a musician in a symphony. Interestingly, the author wrote 72 programs before "getting the hang" of his own process. 
 
 ### 2. The Baseline Personal Process
+
 Do a small coding project using their introductory "PSP0" process. (Note above where these are found.) This lightweight process measures time and defects in 3 phases: planning, development, and postmortem.
 
 The process asks you to do all your coding up front before compiling. I would normally put all the unit test code in place first, then compile, convince myself that a failing test behaves the way I want, and then code up the solution. I kept an open mind and did it all up front. In the future perhaps that will become 2 separate iterations of the process?
 
 ### 3. Measuring Software Size
+
 "The principal ways to use size data are in planning, quality management, and process analysis" (p 45). A good measure has high correlation (degree that two sets are related) and significance (probability that the relationship occurred by chance).
 
 Establish standards for databases (e.g. number of tables, columns) and lines of code (LOC). LOC standards can be different per language. Modified LOC can count like new LOC, though managing that is trickier than it sounds, there are a few pages dedicated to a "size accounting system" for dealing with modified/added/reused code (though instinctively, I want to use whatever git gives me for free on this).
 
-For program quality, defects per 1,000,000 LOC (MLOC).
+For program quality, defects per 1 million lines of code (MLOC).
 
 Calculating productivity, generally LOC divided by hours. Generally use LOC = added + modified. Expect lower productivity on small changes on larger code bases.
 
 Physical vs Logical LOC. The author spent 50 hours on his 939 LOC pascal logical line counter. "Presently there is no compelling evidence to support any one counting method over another" (p 49). Pick one and be precise and consistent.
 
 ### 4. Planning
+
 Why plan? ¯\_(ツ)_/¯. Kidding. See Figure 4.1 (p 63) "Project Planning Framework". The general strategy is familiar... start with a detailed "statement of work", create a "conceptual design" break down the work into tasks that you know can be done, and estimate with historical data. Follow up afterwards to see how accurate your estimate was. Report progress and follow up with any requirements changes. In the conceptual design phase, spend a few minutes thinking through alternate implementations that can reduce the work. Interestingly, don't spend more than a few hours estimating, even for "fairly large programs" (p 64).
 
 ### 5. Software Estimating
+
 PSP estimating process. "The conceptual design must reflect the way you plan to build the product" (p 70). Break down the conceptual design into parts. Based on the function (Data, I/O, etc), number of items in each part, and size of each item (5 sizes, very small through very large), use a "relative size table" to convert that to total LOC. Then use LOC to estimate total effort.
 
 Proxy-based estimating. A proxy should have a correlation >= 0.7 to development effort, calculated automatically, and be easily visualized. Examples are # classes and database elements. Each person on a team can create different LOC for a given proxy, so use personal data. Table 5.1 shows "relative size table" with difference in LOC per item based on category (p 77).
 
 ### 6. The PROBE Estimating Method
+
 PROxy-Based Estimating (PROBE). Development time uses a linear-fit line based on historical size data. Example estimating problem, and how to estimate if you don't have enough data points (ideally > 3). You can use this process for non-programming tasks.
 
 ### 7. Software Planning
+
 How to make a software schedule. Distinguish "project time" (i.e. task hours) from "calendar time" (weeks, months). It's common to only average 12-15 task hours per week with meetings, vacations, etc. 20 task hours in a week is very productive. Track "Earned Value", the "Planned Value" of a task (task hours divided by total hours), when each task is complete. The author shows the plan for creating this book, which took ~400 task hours to complete the first draft. (Nice job eating the dog food!) Calculate 70% prediction interval for estimating. Strive for task lengths for updates 2-4 times per week. Alert management to changes. The Earned Value score for planning/designing/reviewing will hopefully give motivation to actually do them :-). 
 
 ### 8. Software Quality
+
 Great chapter! It starts with a challenge to the software industry... software developed with Capability Maturity Model level 1 (the most prevalent) result in about 7.5 defects/KLOC (p 133). We should demand this be orders of magnitude lower.
 
 It's cheaper to find defects earlier in the process (we knew that, but worth mentioning again).
@@ -92,6 +102,7 @@ Process Quality Index = Design/Code Time * Design Review Time * Compile Defect /
 Have meetings once a month or so to discuss process improvements for systemic defects.
 
 ### 9. Design and Code Reviews
+
 This book covers personal (self) reviews, as opposed to team inspections. "Finding defects in personal reviews is much more efficient than finding them during testing" (p 195). The PSP goal is to find and fix all defects before the first compile.
 
 Review Principles (p 169): Review your work before moving on, find and fix your defects, use checklists, follow sound review principles (small amounts, print on paper, don't do them when you're tired), measure time and defects, improve your review process, design your product so it is easily reviewed, and identify ways to prevent defects.
@@ -103,15 +114,19 @@ Review measures:
 Even experienced developers introduce 100 defects / KLOC before compiling.
 
 ### 10. Software Design
+
 Taking time to design will improve your code quality, but you will move slower in the short term (p 206). Requirements will always change as you design. Divide and conquer problems. Use prototypes. Do deep dives into modules that have uncertainty. Iterate. Talks about levels of design: requirements, system, high-level, detailed, and implementation. Offers strategies for high level design: progressive (sequential), functional-enhancement (flush out a minimal system then improve), and fast-path enhancement strategy (focus on critical performance path first). Talks about design specification trade-offs. It isn't economical to specify every design detail. It would take too much time and be too cumbersome to maintain. It's worth documenting your design decisions, say in a personal journal. It's worth documenting high-level or critical design decisions.
 
 ### 11. Design Templates
+
 We need better designs! 4 ways to record designs... functional specification (e.g. class diagram), operational specification (e.g. use cases), state specification (e.g. state machine), and logical specification (e.g. pseudocode).
 
 ### 12. Design Verification
+
 "For large and complex programs, even the most labor-intensive (design verification) methods are much faster and more effective than testing." (p 253). The biggest hurdle is convincing yourself that you need to do them! Use design standards like product conventions. Aim for reusable code. Verify with "execution tables"... pick a few use cases and step through pseudocode carefully on paper and track every variable to make sure the logic is correct. This can find bugs that are otherwise very hard to find in testing. Aim for "proper" state machines. Loop verification. Notes on automatic design verification tools.
 
 ### 13. Process Extensions
+
 Characterizes an ideal process and talks about transitioning to it. Offers 4 example processes to start with:
 1. Process Development Process (p 299). Process for developing a process.
 2. PSP 3.0 Process (p 301). Process for building a program. "What I found most interesting about the PSP 3.0 process was that, with high-quality increments, this cyclic strategy actually improved my productivity above what I had achieved with small programs." (p 302)
@@ -119,4 +134,5 @@ Characterizes an ideal process and talks about transitioning to it. Offers 4 exa
 4. Product Maintenance Process (p 302). For making small modifications to a large legacy system. Has a great metaphor about pulling weeds, and the weeds tend to cluster.
 
 ### 14. Using the Personal Software Process
+
 Current software processes do not scale up for success on large projects. Aim for excellence.
