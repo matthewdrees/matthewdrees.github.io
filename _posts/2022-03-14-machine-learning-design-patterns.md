@@ -242,6 +242,16 @@ Separate inputs, features, and transforms to make it easier to move a model to p
 
 Models take features as inputs, which aren't the same as the inputs given by clients. The example given is having the input value "3" for day of week, which could be a different day of the week depending on what day the week stars on. This is called "training-serving skew" and makes moving to production difficult. Make sure you serve on production with the same input->feature transforms you used to train with.
 
+## Repeatable Splitting
+
+We like to use a deterministic way to separate out training, validation, and test datasets.
+
+Use Farm Fingerprint hash on a column or columns, then mod 10 to put 80% training, 10% validation, 10% test. This is easier than trying to remember the seed for a random function.
+
+Interestingly, choose a column or columns (or whole rows) to keep correlated rows in the same split. In the example they choose date for flight information, because flights on the same day are correlated. You can optionally group multiple columns, say date and airport destination. "In our experience, many problems with poor performance of ML can be addressed by designing the data split with potential correlations in mind." (p265)
+
+Some data is correlated by time, examples given are weather patterns (stratify by month), or fraud detection (use the last x number of days because fraud patterns change over time).
+
 ## Notes on running *.ipynb files on google colab
 
 Very few of the design pattern *.pynb files ran "out of the box" for me.
