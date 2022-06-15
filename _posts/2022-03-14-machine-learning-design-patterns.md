@@ -260,6 +260,16 @@ How to update your model when you have a schema change in your new data, but you
 
 Great discussion on how much new data to set aside for validation, and how much old data to keep for training. In both cases you want as few as possible and you have to run trials to see where the prediction settles out.
 
+## 24: Windowed Inference
+
+Stateful stream processing. Use when inference requires a stream of instances. Example given is flight delays, which depends on time of day, they process on a rolling 2 hour window (closed every 10 mins).
+
+Keep only the minimal amount of data in state. In the example, that was sum, sum^2, and count.
+
+Time series models:
+* ARIMA: Autoregressive integrated moving average.
+* LSTM: Long short-term memory.
+
 ## Notes on running *.ipynb files on google colab
 
 Very few of the design pattern *.pynb files ran "out of the box" for me.
