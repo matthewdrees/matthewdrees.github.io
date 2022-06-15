@@ -242,7 +242,7 @@ Separate inputs, features, and transforms to make it easier to move a model to p
 
 Models take features as inputs, which aren't the same as the inputs given by clients. The example given is having the input value "3" for day of week, which could be a different day of the week depending on what day the week stars on. This is called "training-serving skew" and makes moving to production difficult. Make sure you serve on production with the same input->feature transforms you used to train with.
 
-## Repeatable Splitting
+## 22: Repeatable Splitting
 
 We like to use a deterministic way to separate out training, validation, and test datasets.
 
@@ -251,6 +251,14 @@ Use Farm Fingerprint hash on a column or columns, then mod 10 to put 80% trainin
 Interestingly, choose a column or columns (or whole rows) to keep correlated rows in the same split. In the example they choose date for flight information, because flights on the same day are correlated. You can optionally group multiple columns, say date and airport destination. "In our experience, many problems with poor performance of ML can be addressed by designing the data split with potential correlations in mind." (p265)
 
 Some data is correlated by time, examples given are weather patterns (stratify by month), or fraud detection (use the last x number of days because fraud patterns change over time).
+
+## 23: Bridged Schema
+
+How to update your model when you have a schema change in your new data, but you still need some of your old data for model accuracy. Use a statistical method in your one-hot encodings. p272 has a good rule of thumb list, e.g. Mean, median, mode, or frequency, depending on the situation.
+
+"Union schema" is how *not* to do it... combining your old and new category values.
+
+Great discussion on how much new data to set aside for validation, and how much old data to keep for training. In both cases you want as few as possible and you have to run trials to see where the prediction settles out.
 
 ## Notes on running *.ipynb files on google colab
 
