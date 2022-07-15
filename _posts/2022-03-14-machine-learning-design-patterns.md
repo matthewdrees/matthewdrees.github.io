@@ -270,6 +270,22 @@ Time series models:
 * ARIMA: Autoregressive integrated moving average.
 * LSTM: Long short-term memory.
 
+## 25: Workflow Pipeline
+
+Rather than one monolithic process that does the entire data gathering, transforming, training, testing, production, etc, split these out into individual containerized steps. This enables collaboration, make the whole process more reliable, and enables some of the other design patterns.
+
+## 26: Feature Store
+
+Also known as feature engineering. Raw data can come from many different sources and processed by different people. Store and process the raw data in an organized way. Prevents training-serving skew.
+
+For inference, store data with low latency, e.g. Cassandra or Redis. For training, need high throughput such as Hive or BigQuery.
+
+Proposes open-source project Feast that does this.
+
+## 27: Model Versioning
+
+Provide newer models as a different version with a different URL. Typically only provide a new version if there is an API change, not for incremental improvements in inference performance.
+
 ## Notes on running *.ipynb files on google colab
 
 Very few of the design pattern *.pynb files ran "out of the box" for me.
