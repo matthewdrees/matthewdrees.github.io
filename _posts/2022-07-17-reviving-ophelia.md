@@ -26,4 +26,4 @@ Dads: A generation ago a "good" dad was present but not necessarily emotionally 
 
 The "what I learned from listening" chapter towards the end was fantastic. The author talked through her process for helping clients and gave general good advice. This included taking 10-15 min break in a day to listen to your thoughts and be proactive in finding your North Star.
 
-This books is a must read.
+This book is a must read.
