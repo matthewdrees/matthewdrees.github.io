@@ -8,9 +8,9 @@ category: book
 
 By Valliappa Lakshmanan, Sara Robinson, Michael Munn.
 
-Book club book with my sister.
+Book club book with my sister. This book is meant for those doing machine learning every day rather than someone just learning. I had done some of the [Practical Deep Learning fastai course](https://course.fast.ai/) so I wasn't starting from scratch, but it was still quite a bit to discover. Very interesting. Biggest takeaway: Machine learning models are only as good as their data.
 
-Chapter 1, The Need for Machine Learning Design Patterns. Machine learning has it's own jargon. There are dozens of italicized words to learn.
+Regarding the accompanying jupyter notebooks... hardly any of them ran out of the box, I wish I would have cloned the repo and made all corrections there rather than making notes below (which I gave up on noting them halfway through). Having said that, I highly valued these notebooks and I learned quite a bit by figuring out how to get them to work.
 
 ## 1: Hashed Feature
 
@@ -286,6 +286,35 @@ Proposes open-source project Feast that does this.
 
 Provide newer models as a different version with a different URL. Typically only provide a new version if there is an API change, not for incremental improvements in inference performance.
 
+## 28: Heuristic Benchmark
+
+Be prepared to defend the question "Is this model good or bad?". It's easier to reason with improvements (e.g. 1% more accurate, or 30 seconds faster), so set a baseline that is easy to understand. Can use averages or human experts as a baseline.
+
+Is a 1% improvement worth doing? Calculate a "utility value", the value of incremental improvement vs the costs of deploying a ML model.
+
+## 29: Explainable Predictions
+
+Why does a model predict the way it does? Can help establish trust, improve model performance, and help meet compliance standards for transparency.
+
+Models can be "interpretable by design". Some lend themselves well like decision trees. Linear models can use real-world values for coefficients.
+
+More complicated models can be hard to explain. "Post hoc" explanation methods can be instance-level or global (combination of features).
+
+SHAP library for determining how much each feature contributes to prediction output. XRAI for images, highlights pixels that mattered for inference. (Interesting example: images for kayaks might be keying on the paddles.)
+
+[Quick, Draw!](https://quickdraw.withgoogle.com/) for quick hand-sketch inference fun.
+
+## 30: Fairness Lens
+
+"Machine" in ML implies no bias, but humans curate the data sets. Naturally-occurring bias (there are fewer cases of fraud because fraud is rare) as opposed to harmful or problematic bias. This pattern provides tools for finding and correcting bias. "With great power comes great responsibility." (p358)
+
+Before training:
+* Data distribution bias: Need a balanced set of examples
+* Data representation bias: Need data balanced across features. Beware of subjective bias during labelling.
+
+After training:
+* Use What-If Tool. Can fix by altering classification precision threshold or retraining the model.
+
 ## Notes on running *.ipynb files on google colab
 
 Very few of the design pattern *.pynb files ran "out of the box" for me.
@@ -368,3 +397,7 @@ Quick one! Be sure to use the chapter 4 data folder instead of the chapter 3 dat
 Had to install tensorflow_io
 
     !pip3 install tensorflow_io
+
+### Note about being charged $150 in 1 month on google console services
+
+One of my google projects ran up a $150 tab on one of the services on google console before I noticed it on my credit card bill. I must have left one running on accident. I couldn't figure out which design pattern notebook it was from, but after 10 minutes of scanning google console I simply deleted that project. Geez I thought the cloud was supposed to be inexpensive?
