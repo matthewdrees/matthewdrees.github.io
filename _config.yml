@@ -15,10 +15,10 @@ lightavatar:
 darkavatar: 
 
 # A short description (e.g., A blog dedicated to reviewing cat gifs), used as part of the title tag like Ben's Awesome Site | A blog dedicated to reviewing cat gifs instead of Ben's Awesome Site | Long description about a blog dedicated to reviewing cat gifs that would be used when page.title is not defined.
-tagline: Minimalistic Jekyll theme that automatically supports dark and light modes for blogs
+tagline: Personal blog
 
 # A longer description used for the description meta tag. Also used as fallback for pages that don't provide their own description, and also as part of the page's title tag if neither page.title nor site.tagline has been defined.
-description: Minimalistic Jekyll theme that automatically supports dark and light modes for blogs
+description: Some notes that I have
 
 # The full URL to your site. Note: site.github.url will be used by default.
 url:
@@ -33,7 +33,7 @@ baseurl: ""
 author: matthewdrees
 
 # URL to a site-wide logo (e.g., /assets/your-company-logo.png)
-logo: /assets/images/light_bauhaus_logo.png
+logo: #/assets/images/light_bauhaus_logo.png
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
@@ -42,8 +42,7 @@ google_analytics:
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  github: matthewdrees
-  rss: # just type anything here for a working RSS icon
+  rss: rss
 
 plugins:
   - jekyll-seo-tag
