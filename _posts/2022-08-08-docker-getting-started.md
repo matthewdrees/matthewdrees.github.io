@@ -6,7 +6,7 @@ category: software
 
 ![Docker Icon](/assets/docker-icon.jpg)
 
-As an appetizer for our next book club book, [Docker Deep Dive](https://www.amazon.com/Docker-Deep-Dive-Nigel-Poulton/dp/1521822808), and while we wait for the books to arrive, we ran through the [Docker getting started tutorial](https://docs.docker.com/get-started/).
+We ran through the [Docker getting started tutorial](https://docs.docker.com/get-started/) as an appetizer for our next book club book, [Docker Deep Dive](https://www.amazon.com/Docker-Deep-Dive-Nigel-Poulton/dp/1521822808).
 
 It took about 3 hours to walk through and get everything to run, though give yourself an extra couple of hours if you plan to poke at some of the supporting links/videos.
 
