@@ -33,3 +33,14 @@ Unhandled returns are compiler warnings. Nice! They are silently allowed in C++.
 In this example they allow the same variable "guess" to be a string and then converted to a unsigned 32 bit number by "shadowing".
 
 The cargo system for using the "rand" external crate is slick. The Cargo.lock file tracks which version was actually used, and can be updated with "cargo update".
+
+## 3. Common Programming Concepts
+
+The chapter name says it all. Notes:
+* Uh-oh... "shadowing" allows you to use "let" again on a variable to re-bind it. Immutable is a lie!
+* Debug builds check for integer overflows/underflows, release builds wrap the number.
+* Char is 4 bytes. (But note link to section about UTF-8.)
+* Tuples & arrays.
+* Expressions vs Statements. Expressions don't have an ending semicolon. I find them confusing at the moment but have faith it will make sense after a while.
+* If statement code blocks are called "arms".
+* Looping constructs.
