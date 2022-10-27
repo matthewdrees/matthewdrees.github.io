@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Book Notes: Words of Radiance"
-category: software
+category: book
 ---
 
 ![Book cover](/assets/words-of-radiance.jpg)
