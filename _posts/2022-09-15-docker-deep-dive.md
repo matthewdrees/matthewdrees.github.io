@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Book Notes: Docker Deep Dive"
+title:  "Book notes: Docker Deep Dive"
 category: book
 ---
 

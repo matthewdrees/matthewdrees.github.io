@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Book Notes: Reviving Ophelia 25th Anniversary Edition: Saving the Selves of Adolescent Girls"
+title:  "Book notes: Reviving Ophelia 25th Anniversary Edition: Saving the Selves of Adolescent Girls"
 category: book
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Book Notes: Drawdown: The Most Comprehensive Plan Ever Proposed to Reverse Global Warming"
+title:  "Book notes: Drawdown: The Most Comprehensive Plan Ever Proposed to Reverse Global Warming"
 category: book
 ---
 

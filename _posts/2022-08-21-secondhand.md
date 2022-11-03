@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Book Notes: Secondhand"
+title:  "Book notes: Secondhand"
 category: book
 ---
 

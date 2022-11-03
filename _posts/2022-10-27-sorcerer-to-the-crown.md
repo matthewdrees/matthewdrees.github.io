@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Book Notes: Sorcerer to the Crown"
+title:  "Book notes: Sorcerer to the Crown"
 category: book
 ---
 

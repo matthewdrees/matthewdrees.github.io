@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Book Notes: Astrophysics for People in a Hurry"
+title:  "Book notes: Astrophysics for People in a Hurry"
 category: book
 ---
 

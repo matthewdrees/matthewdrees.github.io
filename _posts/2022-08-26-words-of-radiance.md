@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Book Notes: Words of Radiance"
+title:  "Book notes: Words of Radiance"
 category: book
 ---
 

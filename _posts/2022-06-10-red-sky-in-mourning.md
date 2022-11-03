@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Book Notes: Red Sky in Mourning"
+title:  "Book notes: Red Sky in Mourning"
 category: book
 ---
 

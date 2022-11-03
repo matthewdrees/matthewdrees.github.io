@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Book Notes: Machine Learning Design Patterns"
+title:  "Book notes: Machine Learning Design Patterns"
 category: book
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Book Notes: The Way of Kings"
+title:  "Book notes: The Way of Kings"
 category: book
 ---
 
