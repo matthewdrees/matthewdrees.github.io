@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Book Notes: The Rust Programming Language"
+title:  "Book notes: The Rust Programming Language"
 category: book
 ---
 
@@ -24,7 +24,7 @@ Book club time. We opted for the online version of the [The Rust Programming Lan
 
 ## 2. Programming a Guessing Game
 
-Introduction to many common parts of rust language by [https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html](walking through a small program) that generates a random number between 1 and 100 and lets the user guess the number on the command line.
+Introduction to many common parts of Rust language by [https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html](walking through a small program) that generates a random number between 1 and 100 and lets the user guess the number on the command line.
 
 Variables are const by default. Nice! Const is such a pain in C++, between forgetting to make something const that should have been, or leaving something non-const to allow for moves.
 
@@ -44,3 +44,23 @@ The chapter name says it all. Notes:
 * Expressions vs Statements. Expressions don't have an ending semicolon. I find them confusing at the moment but have faith it will make sense after a while.
 * If statement code blocks are called "arms".
 * Looping constructs.
+
+## 4. Understanding Ownership
+
+Ownership is a key feature of Rust. The lifetime of a value is defined by the scope. You can have a single mutable reference to a value or any number of immutable references.
+
+Aside: I really like the diagram explanations for references and slices.
+
+## 5. Using Structs to Structure Related Data
+
+Nice features:
+* Field init shorthand.
+* Struct update syntax.
+* Tuple structs.
+* Unit-like structs (no fields).
+
+Note that fields in a struct are public within the module (file), but private by default outside of it.
+
+[Derive traits](https://doc.rust-lang.org/rust-by-example/trait/derive.html), e.g. for cloning, hashing, value format for debugging, etc.
+
+Struct methods, associated functions.
