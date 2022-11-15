@@ -64,3 +64,13 @@ Note that fields in a struct are public within the module (file), but private by
 [Derive traits](https://doc.rust-lang.org/rust-by-example/trait/derive.html), e.g. for cloning, hashing, value format for debugging, etc.
 
 Struct methods, associated functions.
+
+## 6. Enums and Pattern Matching
+
+Whoa, enums in Rust can be strings, structs, etc. Enums can have functions.
+
+enum option<T>: allows the compiler to confirm proper checks for null. Tony Hoare calls null references a "billion-dollar mistake".
+
+match: like a switch statement (case => "arms"). Must have arms for all possibilities, or "other" for default case, or "_" for don't care about other cases. Arms are evaluated in the order specified.
+
+if let: Less code if you only care about one value in the enum.
