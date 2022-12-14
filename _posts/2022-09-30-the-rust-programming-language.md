@@ -71,6 +71,22 @@ Whoa, enums in Rust can be strings, structs, etc. Enums can have functions.
 
 enum option<T>: allows the compiler to confirm proper checks for null. Tony Hoare calls null references a "billion-dollar mistake".
 
-match: like a switch statement (case => "arms"). Must have arms for all possibilities, or "other" for default case, or "_" for don't care about other cases. Arms are evaluated in the order specified.
+match: like a switch statement (case => "arms"). Must have arms for all possibilities, or "other" for default case if you use the value, or "_" if you don't use the value. Arms are evaluated in the order specified.
 
 if let: Less code if you only care about one value in the enum.
+
+## 7. Managing Growing Projects with Packages, Crates, and Modules
+
+* Crate: Smallest unit of code for rustc. Usually means "library".
+* Package: Bundle of 1 or more crates. Can only have 1 library, but can have unlimited executable crates. Crate type determined by presence of lib.rs or main.rs.
+* Modules:
+  + API for package.
+  + Defined by "mod" keyword.
+  + Can be in one or several files.
+  + Default visibility is private for outside the module or module "ancestry" (great word), public for inside the module or child modules. Can be made public with "pub" keyword.
+* [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/) complete with checklist.
+* Smaller random module stuff:
+  + "pub use" for reexporting.
+  + "use" keyword only good for current namespace.
+  + "use" nested paths. E.g. "use std::{cmp:: Ordering, io}"
+  + "use namespace::*" (glob) for importing all modules in a namespace.
