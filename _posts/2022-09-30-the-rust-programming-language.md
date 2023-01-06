@@ -90,3 +90,28 @@ if let: Less code if you only care about one value in the enum.
   + "use" keyword only good for current namespace.
   + "use" nested paths. E.g. "use std::{cmp:: Ordering, io}"
   + "use namespace::*" (glob) for importing all modules in a namespace.
+
+## 8. Common Collections
+
+Vec, String, and HashMap track close to similar structures in other languages.
+
+String is UTF-8 which has variable-length characters. Can iterate with a char but not index into it.
+
+## 9. Error Handling
+
+Recoverable vs unrecoverable errors. Lots of good shortcuts for handling/propagating errors with expect, unwrap, and ?. Guidelines for when to panic.
+
+## 10. Generic Types, Traits, and Lifetimes
+
+Generics in Rust a lot like templates in C++. I'm impressed by how Rust enums behave like Unions/Variants and can take advantage of generics. As with templates, Rust "stamps" out code for concrete types when compiling so there is no runtime cost. Fun word: *monomorphisation*.
+
+Traits are like C++ concepts. Trait methods can have a default implementation. Function parameters can require traits (many different examples). Functions can return a generic with a trait bound, but for now must be the same type (can't return different types with same trait).
+
+Shout out to the borrow checker, one of the few compiler parts with its own branding!
+
+Uh oh. Lifetime annotation syntax?! Blah. At first glance: for functions taking and returning references, they help establish lifetime relationships, which lead to better error messages.
+
+There are "lifetime elision" rules that eliminate the need for lifetime annotation for more common cases, which  may change/grow over time. Three rules:
+1. Compiler assigns a lifetime to all input references.
+2. If exactly one input lifetime parameter, that lifetime is assigned to all output lifetime parameters.
+3. &self or &mut self lifetime is assigned to all output lifetimes.
