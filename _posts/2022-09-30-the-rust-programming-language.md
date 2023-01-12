@@ -115,3 +115,21 @@ There are "lifetime elision" rules that eliminate the need for lifetime annotati
 1. Compiler assigns a lifetime to all input references.
 2. If exactly one input lifetime parameter, that lifetime is assigned to all output lifetime parameters.
 3. &self or &mut self lifetime is assigned to all output lifetimes.
+
+## 11. Writing Automated Tests
+
+Rust compiler and type checking can't do it all, still have to write tests.
+
+How to setup tests with good error messages for assert, assert_eq, assert_ne, tests that should panic (with specific panic messages), and tests that return Result<T, E>.
+
+Tests run in parallel by default.
+
+Annotate long-running tests with [ignore] attribute.
+
+Can filter which tests run.
+
+Unit tests: Have a "test" module in each file in src, test at function level. Annotate module with #[cfg(test)] and test function with #[test]. Can test private functions (because in the same file).
+
+Integration tests: Separate "tests" subfolder. Each file is a crate that can specialize in specific use-cases. Put setup code in common/mod.rs. Can't create integration tests in a binary crate; for those prefer a "straightforward" main.rs that calls into a lib.rs (which can have integration tests).
+
+Doc-tests: unit tests that can be put in documentation strings, likely inspired by Python's doctest.
