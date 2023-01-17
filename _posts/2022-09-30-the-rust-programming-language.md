@@ -133,3 +133,5 @@ Unit tests: Have a "test" module in each file in src, test at function level. An
 Integration tests: Separate "tests" subfolder. Each file is a crate that can specialize in specific use-cases. Put setup code in common/mod.rs. Can't create integration tests in a binary crate; for those prefer a "straightforward" main.rs that calls into a lib.rs (which can have integration tests).
 
 Doc-tests: unit tests that can be put in documentation strings, likely inspired by Python's doctest.
+
+If a section (unit, integration, doc-test) has a failed test, subsequent sections don't run.
