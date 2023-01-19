@@ -135,3 +135,9 @@ Integration tests: Separate "tests" subfolder. Each file is a crate that can spe
 Doc-tests: unit tests that can be put in documentation strings, likely inspired by Python's doctest.
 
 If a section (unit, integration, doc-test) has a failed test, subsequent sections don't run.
+
+## 12. An I/O Project: Building a Command Line Program
+
+This chapter was great! It puts together many of the lessons learned so far in a real-ish example _minigrep_ command line tool. It builds with several refactors and points out "best practices" along the way. Someone put a lot of love into writing this chapter. I'd recommend this chapter as "minimum reading distance" for this book.
+
+Lots of good tidbits but interesting note about what goes in lib.rs vs main.rs: Keep main.rs to a minimum. If your CLI handling gets complicated, move it to lib.rs.
