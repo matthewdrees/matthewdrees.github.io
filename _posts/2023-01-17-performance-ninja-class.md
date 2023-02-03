@@ -19,3 +19,9 @@ perf stat --topdown [doesn't seem to be supported on WSL2 yet](https://github.co
 The first lab is in the "core bound" section and focuses on using vectorization instructions for parallel data processing. Not the easiest lab assignment! I spent a good chunk of time walking through the [sequence alignment](https://en.wikipedia.org/wiki/Sequence_alignment) algorithm figuring out what it did. The performance fix was to transpose the matrix and adjust the algorithm accordingly, which enabled vectorization assembly instructions. I got a 3x performance increase.
 
 16 pomodoros.
+
+## vectorization_2
+
+A follow up vectorization problem. This should have been the first lab! It was *much* easier than vectorization_1. Re-write a checksum algorithm to allow for auto vectorization. I saw a 9x performance increase.
+
+3 pomodoros.
