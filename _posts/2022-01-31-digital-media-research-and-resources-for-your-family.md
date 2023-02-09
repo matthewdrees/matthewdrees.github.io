@@ -14,32 +14,33 @@ Stupid parenting guilt... I couldn't bring myself to recycle it. Instead I put i
 
 Here's what it generated for us:
 * Mobile devices & TVs are not allowed in the following areas:
-  + Bedroom
-  + Kitchen or dining room table
+  * Bedroom
+  * Kitchen or dining room table
 * We will not use mobile devices:
-  + While walking across the street
-  + Doing homework
-  + At school
-  + In the car, except for long trips
-  + Family time
-  + Meal times
-  + One hour before bed (devices charge outside of bedroom)
+  * While walking across the street
+  * Doing homework
+  * At school
+  * In the car, except for long trips
+  * Family time
+  * Meal times
+  * One hour before bed (devices charge outside of bedroom)
 * Co-view media and co-play video games with your kids
 * Productive uses of recreational screen time:
-  + Video chat with friends or relatives
-  + Age appropriate content
-  + High-quality content
+  * Video chat with friends or relatives
+  * Age appropriate content
+  * High-quality content
 * What to do while not on a screen:
-  + Reading
-  + Sleeping
-  + Being with friends
-  + Hobbies
-  + Play a sport
-  + Get outdoors
+  * Reading
+  * Sleeping
+  * Being with friends
+  * Hobbies
+  * Play a sport
+  * Get outdoors
 * Digital citizenship:
-  + Respect others
-  + Stick up for others
-  + Tell a parent or trusted adult about any uncomfortable text messages or photos.
+  * Respect others
+  * Stick up for others
+  * Tell a parent or trusted adult about any uncomfortable text messages or photos.
+
 # No smartphones until at least 8th grade
 
 <https://www.waituntil8th.org/why-wait>. It's so easy to give your old phone to your 5th grader. We did. What a mistake. Waiting until high school makes a lot of sense. We course-corrected with the 2nd kid. Parents need to band together on this.
@@ -73,17 +74,19 @@ Seattle Police Department (Internet Crimes Against Children Unit): <https://www.
 # TED Talk “Addicted to Likes”
 
 <https://www.youtube.com/watch?v=kCA_g2i1ZG8>. 2016. 13 min video. A social media addict describes a handbook she wishes she had at the beginning:
-01. Prepare to be connected to the world. It is an amazing thing if used wisely.
-02. Everyone looks prettier, happier, and skinnier. Don't believe it.
-03. Use it to be inspired and connected rather than to validate your life choices.
-04. People share what they want you to believe... pinch of salt as needed.
-05. Upload carefully... that (inappropriate) photo of you might be less funny when applying for a job.
-06. Be kind to people online, every glossy account hides a sensitive soul, struggling with their own battles.
-07. Avoid scrolling feeds if you're feeling a bit low, instead focus on what YOU HAVE over what you don't.
-08. Nurture yourself before others.
-09. Choose Love over "likes".
-10. Live life for experiences, not for the 'gram.
-# National Association of Media Literacy’s Free Guide for Parents:
+
+1. Prepare to be connected to the world. It is an amazing thing if used wisely.
+2. Everyone looks prettier, happier, and skinnier. Don't believe it.
+3. Use it to be inspired and connected rather than to validate your life choices.
+4. People share what they want you to believe... pinch of salt as needed.
+5. Upload carefully... that (inappropriate) photo of you might be less funny when applying for a job.
+6. Be kind to people online, every glossy account hides a sensitive soul, struggling with their own battles.
+7. Avoid scrolling feeds if you're feeling a bit low, instead focus on what YOU HAVE over what you don't.
+8. Nurture yourself before others.
+9. Choose Love over "likes".
+10. Live life for experiences, not for instagram.
+
+# National Association of Media Literacy’s Free Guide for Parents
 
 <https://namle.net/a-parents-guide/>. Don't believe fake news.
 
@@ -92,37 +95,19 @@ Seattle Police Department (Internet Crimes Against Children Unit): <https://www.
 American Psychological Association (parental social media posting): <https://www.apa.org/monitor/2017/07-08/social-media.aspx>. Good small "rules of thumb" list for social media posts.
 
 # Books
+
 * 2020: "Parenting in the Screen Age: A Guide for Calm Conversations"
 * 2006: "The Elephant in the Living Room: Make Television Work for Your Kids”
+
 # Remaining links with duplicate information or didn't make the cut
 
-• Health effects of screen time: <http://www.screenfree.org/wp-content/uploads/2014/01/screentimefs.pdf>
-Dead link. whew. Otherwise the gist is screen free saturdays and screen free week.
-
-• American Psych Association “Digital Guidelines”: <https://www.apa.org/helpcenter/digital-guidelines.aspx>
-Good general guidelines. Mostly covered by the Digital Media Plan above.
-
-• 60 minutes (effects of screen time on kids). 2018. <https://www.paramountplus.com/shows/60_minutes/video/d9REePtlNWtaRn4HDHCwqBVAKDejFum3/groundbreaking-study-examines-effects-of-screen-time-on-kids/>
-They just started this study. One thing's for sure, don't let kids under 2 years old on screens.
-
-* Child Mind Institute (Media and Tech): <https://childmind.org/topics/concerns/media-and-technology/>
-Good stuff. A lot of it covered by other articles.
-
-* Common Sense Media (Mental Health): <https://www.commonsensemedia.org/mental-health>
-Good stuff. Already covered.
-
-* Federal Trade Commission “Protecting Kids Online”: <https://www.consumer.ftc.gov/topics/protecting-kids-online>
-Good stuff. A lot of it covered already.
-
-* OECD Digital Media and Mental Health Report: <http://www.oecd.org/els/health-systems/Children-and-Young-People-Mental-Health-in-the-Digital-Age.pdf>
-Screens are causing our kids to be more depressed. The charts say it all.
-
-* “Increases in Depressive Symptoms, Suicide-Related Outcomes, and Suicide Rates Among U. S.
-Adolescents After 2010 and Links to Increased New Media Screen Time”: <http://journals.sagepub.com/doi/full/10.1177/2167702617723376>
-Requires a subscription. But the gist is that kids (especially girls) are more depressed/suicidal with social media.
-
-* “Digital Media, Anxiety, and Depression in Children”: <http://pediatrics.aappublications.org/content/140/Supplement_2/S76.long>
-Another subscription requirement. Come on people.
-
-* <https://www.healthychildren.org/english/family-life/media/pages/default.aspx>
-Blah. A list of 40 more links.
+* Health effects of screen time: <http://www.screenfree.org/wp-content/uploads/2014/01/screentimefs.pdf>. Dead link. whew. Otherwise the gist is screen free saturdays and screen free week.
+* American Psych Association “Digital Guidelines”: <https://www.apa.org/helpcenter/digital-guidelines.aspx>. Good general guidelines. Mostly covered by the Digital Media Plan above.
+* 60 minutes (effects of screen time on kids). 2018. <https://www.paramountplus.com/shows/60_minutes/video/d9REePtlNWtaRn4HDHCwqBVAKDejFum3/groundbreaking-study-examines-effects-of-screen-time-on-kids/>. They just started this study. One thing's for sure, don't let kids under 2 years old on screens.
+* Child Mind Institute (Media and Tech): <https://childmind.org/topics/concerns/media-and-technology/>. Good stuff. A lot of it covered by other articles.
+* Common Sense Media (Mental Health): <https://www.commonsensemedia.org/mental-health>. Good stuff. Already covered.
+* Federal Trade Commission “Protecting Kids Online”: <https://www.consumer.ftc.gov/topics/protecting-kids-online>. Good stuff. A lot of it covered already.
+* OECD Digital Media and Mental Health Report: <http://www.oecd.org/els/health-systems/Children-and-Young-People-Mental-Health-in-the-Digital-Age.pdf>.  Screens are causing our kids to be more depressed. The charts say it all.
+* “Increases in Depressive Symptoms, Suicide-Related Outcomes, and Suicide Rates Among U. S. Adolescents After 2010 and Links to Increased New Media Screen Time”: <http://journals.sagepub.com/doi/full/10.1177/2167702617723376>. Requires a subscription. But the gist is that kids (especially girls) are more depressed/suicidal with social media.
+* “Digital Media, Anxiety, and Depression in Children”: <http://pediatrics.aappublications.org/content/140/Supplement_2/S76.long>. Another subscription requirement. Come on people.
+* <https://www.healthychildren.org/english/family-life/media/pages/default.aspx>. Blah. A list of 40 more links.
