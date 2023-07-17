@@ -18,9 +18,8 @@ I like the pacing of this course. Paul is right when he says a little bit each d
 6. Loops. Can break out of an outer loop by labelling the outer loop. Clever, in the past to do this I would put it in its own function.
 7. Functions. Can have external argument name different than the internal parameter name. Whoa. Add underscore in function declaration to remove the calling argument label.
 8. Default values and errors in functions. Most exceptions in swift have a "meaningful message" that can be shown to the user, using error.localizedDescription.
-
-
-6. Closures. "Why does Swift love closures so much?" I had the same question! Trailing closure syntax if the last parameter to a function is a closure. Very clean. Very unique to Swift I think? I've never seen it before.
+9. Closures. "Why does Swift love closures so much?" I had the same question! Trailing closure syntax if the last parameter to a function is a closure. Very clean. Very unique to Swift I think? I've never seen it before. Shorthand syntax: $0, $1, etc, Paul recommends only using for simple closures. Can have multiple trailing closures.
+10. Structs.
 
 Notes from [https://www.hackingwithswift.com/100](100 Days of Swift)
 
