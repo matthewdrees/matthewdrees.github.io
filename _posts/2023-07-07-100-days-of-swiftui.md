@@ -20,6 +20,8 @@ I like the pacing of this course. Paul is right when he says a little bit each d
 8. Default values and errors in functions. Most exceptions in swift have a "meaningful message" that can be shown to the user, using error.localizedDescription.
 9. Closures. "Why does Swift love closures so much?" I had the same question! Trailing closure syntax if the last parameter to a function is a closure. Very clean. Very unique to Swift I think? I've never seen it before. Shorthand syntax: $0, $1, etc, Paul recommends only using for simple closures. Can have multiple trailing closures.
 10. Structs. Computed properties with get/set (and newValue). Property Observers using didSet (and, more rarely, willSet, say for animations). Custom initializers.
+11. Structs II. Access control with private, fileprivate, public, and private(set). Self vs self.
+12. Classes. 5 differences with struct. Inheritance, copying, init, deinit. Classes don't use mutating keyword for methods.
 
 Notes from [https://www.hackingwithswift.com/100](100 Days of Swift)
 
