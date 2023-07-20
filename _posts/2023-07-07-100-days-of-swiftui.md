@@ -22,6 +22,7 @@ I like the pacing of this course. Paul is right when he says a little bit each d
 10. Structs. Computed properties with get/set (and newValue). Property Observers using didSet (and, more rarely, willSet, say for animations). Custom initializers.
 11. Structs II. Access control with private, fileprivate, public, and private(set). Self vs self.
 12. Classes. 5 differences with struct. Inheritance, copying, init, deinit. Classes don't use mutating keyword for methods.
+13. Protocols and extensions. Opaque return types, using *some* keyword, returns a specific value of a protocol. Can use extensions to add capability, even to standard library stuff like Strings. Make compelling case for extensions rather than functions. Tip: put custom initializer in an extension to keep the auto-generated member-wise initializer. Protocol extensions (aptly named!), uses example of extension Collection { var isNotEmpty: Bool {...} }.
 
 Notes from [https://www.hackingwithswift.com/100](100 Days of Swift)
 
