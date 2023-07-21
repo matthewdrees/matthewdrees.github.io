@@ -8,7 +8,7 @@ By Paul Hudson.
 
 My notes from the [https://www.hackingwithswift.com/100/swiftui](100 Days of SwiftUI) course.
 
-I like the pacing of this course. Paul is right when he says a little bit each day.
+I like the pacing of this course. Paul is right when he says a little bit each day. I enjoyed the dog cameos!
 
 1. Why swift, numbers, strings. Use let/var syntax to allow for constants (rather than extra "const" keyword in C++). The multi-line string """ formatting is strict.
 2. Bools, string concatenation.
@@ -23,6 +23,8 @@ I like the pacing of this course. Paul is right when he says a little bit each d
 11. Structs II. Access control with private, fileprivate, public, and private(set). Self vs self.
 12. Classes. 5 differences with struct. Inheritance, copying, init, deinit. Classes don't use mutating keyword for methods.
 13. Protocols and extensions. Opaque return types, using *some* keyword, returns a specific value of a protocol. Can use extensions to add capability, even to standard library stuff like Strings. Make compelling case for extensions rather than functions. Tip: put custom initializer in an extension to keep the auto-generated member-wise initializer. Protocol extensions (aptly named!), uses example of extension Collection { var isNotEmpty: Bool {...} }.
+14. Optionals and unwrapping. Unwrapping with let/guard. Force unwrapping with *!*. Implicitly unwrapped don't need to be unwrapped to be used, are becoming more rare with move to SwiftUI. Nil coalescing provides a default value with *??* operator. Optional chaining using *?*. Optional *try?* for changing a throwing function to one that returns an optional, can force with *try!*. "Failable" initializers *init?* return an optional, with *nil* for failing. Typecasting is equivalent to C++ dynamic_cast, using *as?*.
+15. Review. Skipped it. Nice work making the 50 "Swifty hidden terms" game!
 
 Notes from [https://www.hackingwithswift.com/100](100 Days of Swift)
 
