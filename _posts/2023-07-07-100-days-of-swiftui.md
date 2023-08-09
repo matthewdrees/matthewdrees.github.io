@@ -41,4 +41,4 @@ I ventured down this path a bit because I was using older sample code that used 
 22. Project 2 wrap up and challenge. Getting comfortable with @State, updating views, and alerts.
 23. Project 3, how views and modifiers work. SwiftUI uses View structs instead of classes because they are simpler and faster. UIView class has hundreds of properties, whether you need them or not. Color.red is a swift View struct with only one property. At the moment there is a UIHostingController to bridge the old UIKit and SwiftUI but don't rely on that. Modifier order matters. SwiftUI uses the opaque modifier *some* View as the body property type, so we don't have to type out the long exact custom ModifiedContent<...> thing. Environment modifier (e.g. font) can be overridden by child views, regular modifiers (e.g. blur) do not. Breaking up complex views using views as properties, 3 ways: Group, Stack, @ViewBuilder. Custom views and view modifiers. Whew!
 24. Project 3 review and challenges.
-25. Milestone 2: Rock Paper Scissors app.
+25. Milestone 2: Rock Paper Scissors app. Similar to Guess the Flag. Took me 1.5 hours.
