@@ -43,4 +43,4 @@ I ventured down this path a bit because I was using older sample code that used 
 24. Project 3 review and challenges.
 25. Milestone 2: Rock Paper Scissors app. Similar to Guess the Flag. Took me 1.5 hours.
 26. Project 4, BetterRest prep. Stepper, DatePicker, Date ranges. Warning: working with dates is really hard. E.g. time zones, leap years/seconds, and 12 days missing from September 1752. Amazingly easy to work a Machine Learning model into iOS, in this case used a Tabular Regression model that automatically figures out which works best: Random Forest, Boosted Tree, Decision Tree, or Linear Regression.
-27. Project 4, build the BetterRest app. Layout,
+27. Project 4, build the BetterRest app. More layout work, Core ML. The Core ML stuff is pretty cool.
