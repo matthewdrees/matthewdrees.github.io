@@ -45,3 +45,5 @@ I ventured down this path a bit because I was using older sample code that used 
 26. Project 4, BetterRest prep. Stepper, DatePicker, Date ranges. Warning: working with dates is really hard. E.g. time zones, leap years/seconds, and 12 days missing from September 1752. Amazingly easy to work a Machine Learning model into iOS, in this case used a Tabular Regression model that automatically figures out which works best: Random Forest, Boosted Tree, Decision Tree, or Linear Regression.
 27. Project 4, build the BetterRest app. More layout work, Core ML. The Core ML stuff is pretty cool.
 28. Project 4, review and wrap up challenges.
+29. Project 5, part 1. *List* most popular view type, for a scrolling view of data. (Equivalent to UITableView.) A form is a specialized type of List. Loading resources from app bundle. Some string manipulation.
+20. Project 5, part 2.
