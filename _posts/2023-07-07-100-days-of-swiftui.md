@@ -46,4 +46,4 @@ I ventured down this path a bit because I was using older sample code that used 
 27. Project 4, build the BetterRest app. More layout work, Core ML. The Core ML stuff is pretty cool.
 28. Project 4, review and wrap up challenges.
 29. Project 5, part 1. *List* most popular view type, for a scrolling view of data. (Equivalent to UITableView.) A form is a specialized type of List. Loading resources from app bundle. Some string manipulation.
-20. Project 5, part 2.
+30. Project 5, part 2. Build the app. onAppear and fatalError. Spellcheck using UITextChecker.
