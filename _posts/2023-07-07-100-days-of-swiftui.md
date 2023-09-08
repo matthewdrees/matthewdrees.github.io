@@ -48,3 +48,4 @@ I ventured down this path a bit because I was using older sample code that used 
 29. Project 5, part 1. *List* most popular view type, for a scrolling view of data. (Equivalent to UITableView.) A form is a specialized type of List. Loading resources from app bundle. Some string manipulation.
 30. Project 5, part 2. Build the app. onAppear and fatalError. Spellcheck using UITextChecker.
 31. Project 5 challenges and review questions. Already forgetting some stuff and having to go back to previous projects. Good for learning reinforcement I suppose.
+32. Animations. Implicit animations use the *.animation* modifier. Can put the modifier on a view or a binding, both are important but don't know why yet. Neat circle button effect with radiating fading ring in a circle overlay.
