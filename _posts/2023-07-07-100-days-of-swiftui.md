@@ -50,3 +50,4 @@ I ventured down this path a bit because I was using older sample code that used 
 31. Project 5 challenges and review questions. Already forgetting some stuff and having to go back to previous projects. Good for learning reinforcement I suppose.
 32. Implicit animations. Use the *.animation* modifier. Can put the modifier on a view or a binding, both are important but don't know why yet. Neat circle button effect with radiating fading ring in a circle overlay.
 33. Explicit animations. Use *withAnimation* method. Multiple animations at the same time, the modifier order matters. Neat affect with Hello World letters animating with different delays. Showing/hiding views.
+34. Project 6 wrap up and challenge with animations. I spent a couple of hours on this, but I went down a rabbit hole on some of the animations.
