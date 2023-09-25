@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How Does the Electrical Grid Work?"
+title:  "How does the electrical grid work?"
 category: energy
 ---
 
