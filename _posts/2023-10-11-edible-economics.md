@@ -12,7 +12,7 @@ Got this as a Christmas gift.
 
 Favorite fact: Koreans consume 7.5 kg of garlic per person per year. (10x times as much as Italians.)
 
-This book is a fun lesson in economics using foods as a metaphor. Only the smallest nit to pick: The correlation between the food and the point being was sometimes tenuous. Otherwise the book is overwhelmingly delightful and informative. The main lesson is to look at economic issues from more than one point of view, similar to how you would taste foods from different cultures.
+This book is a fun lesson in economics using foods as a metaphor. Only the smallest nit to pick: The correlation between the food and the point being made was sometimes tenuous. Otherwise the book is overwhelmingly delightful and informative. The main lesson is to look at economic issues from more than one point of view, similar to how you would taste foods from different cultures.
 
 # Overcoming Prejudices
 
