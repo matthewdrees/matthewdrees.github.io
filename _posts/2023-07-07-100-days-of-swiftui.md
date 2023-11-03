@@ -61,3 +61,4 @@ I ventured down this path a bit because I was using older sample code that used 
 42. Project 8, part 4. Review and challenges.
 43. Project 9, part 1. Drawing: Path & Shape. Shapes are more reusable. Put Path inside Shape. Gotcha with how addArc deals with degrees. stroke vs strokeBorder for drawing to the border. Circle vs Arc. Conform Arc to InsettableShape to get strokeBorder.
 44. Project 9, part 2. Programatic navigation with NavigationStack(path:), with different data types, NavigationPath. @Binding type to share @State. Check to see if Codable object has parts that all conform to JSonEncoder.
+45. Project 9, part 3. Customizing the navigation bar appearance. Changed color, hide it. Semantic meaning for toolbar button placement (e.g. cancel, confirm). Editable navigation bar.
