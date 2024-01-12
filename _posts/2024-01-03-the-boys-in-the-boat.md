@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Book notes: The Boys In The Boat"
+title:  "Book notes: The Boys in the Boat"
 category: book
 ---
 
@@ -13,7 +13,7 @@ The Boys in the Boat is [currently on the nytimes bestseller list for 147 weeks 
 
 The story follows the University of Washington rowing team over 3 seasons, their rivalry with The University of California Berkeley, racing against East Coast universities at Poughkeepsie, and ending with a gold medal performance at the 1936 Olympics.
 
-I'd put the "word count feel" of the book at a "medium"... 370 pages but a lot of words on each page, with about a dozen pictures. But the story is gripping even though you know the ending. Halfway through each race you're not really sure if they will win, especially against those cheating host officials running the race at Grünau. The writing style keeps you going. I was struck at the amount of detail in each moment. E.g. during the race a train went by before the start, billowing smoke. The water was a certain color, the wind conditions, etc. But the author has a note at the end about the research: there were many contemporaneous sources: some of the rowers and coaches kept journals, newspaper articles. A couple of the members were still alive, and many stories were told down through the generations.
+I'd put the "word count feel" of the book at a "medium"... 370 pages but a lot of words on each page, with about a dozen pictures. But the story is gripping even though you know the ending. Halfway through each race you're not really sure if they will win, especially against those cheating host officials running the race at Grünau. The writing style keeps you going. I was struck at the amount of detail in each moment. E.g. during the race a train went by before the start, billowing smoke. The water was a certain color, the wind conditions, etc. The author has a note at the end about the research to get these details: there were many contemporaneous sources: some of the rowers and coaches kept journals, newspaper articles. A couple of the members were still alive, and many stories were told down through the generations.
 
 Most of the character development is around one of the rowers: Joe Rantz. His mother dies when he is young and there is a heartbreaking moment where his family abandons him when he is 15 years old. They are living in Sequim, WA, during the depression and the father, step-mother, and 3 step-siblings load up in the car and leave him in a half-finished house with dad saying "You have to find your own happiness in life". Joe has trust problems and doesn't row his best until the rowing team develops full trust with each other.
 
