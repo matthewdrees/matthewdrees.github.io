@@ -153,3 +153,6 @@ Closures don't need type annotations like functions except in some rare cases. T
 Iterators are implemented with the *Iterator* trait and *next* method. Updated the *minigrep* example to use iterator on env::args() directly rather than cloning them into a Vec<String>.
 
 Iterators are a *zero cost abstraction* for Rust. Performance examples with minigrep program and an audio decoder.
+
+## 14. More about Cargo and Crates.io
+
