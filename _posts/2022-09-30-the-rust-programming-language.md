@@ -156,3 +156,10 @@ Iterators are a *zero cost abstraction* for Rust. Performance examples with mini
 
 ## 14. More about Cargo and Crates.io
 
+Customizing builds. e.g. optimization levels for build profiles.
+
+Documentation. *//!* for commenting the current item (e.g. crates and modules), *///* for comments to the next item (e.g. function, struct). cargo doc* to build documentation. Should document examples, panics, errors, and safety. Code samples in comments will run as doctests with cargo test. Promote (i.e. re-export) useful APIs that are buried in a module hierarchy with *pub use*.
+
+Crates.io is a public repository of useful code. Anyone can publish to it. Code is permanent. Can *yank* a version to prevent other projects from using it. Use a crate by putting the it in *dependencies* section of your *Cargo.toml* file. Install and run binaries from it using *cargo install*.
+
+"A *workspace* is a set of packages that share the same *Cargo.lock* and output directory."
