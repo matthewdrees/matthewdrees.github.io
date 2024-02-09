@@ -163,3 +163,11 @@ Documentation. *//!* for commenting the current item (e.g. crates and modules), 
 Crates.io is a public repository of useful code. Anyone can publish to it. Code is permanent. Can *yank* a version to prevent other projects from using it. Use a crate by putting the it in *dependencies* section of your *Cargo.toml* file. Install and run binaries from it using *cargo install*.
 
 "A *workspace* is a set of packages that share the same *Cargo.lock* and output directory."
+
+## 15. Smart Pointers
+
+Box<T> stores T on the heap. E.g. let n = Box::new(5) creates an i32 value of 5 on the heap.
+
+The Deref trait provides the dereference operator *.
+
+Deref coercion...
