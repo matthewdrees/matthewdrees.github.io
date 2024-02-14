@@ -8,7 +8,7 @@ category: book
 
 By Brandon Sanderson.
 
-The second book in the Stormlight Archives series. My notes on the first book here: {% post_url 2022-02-08-the-way-of-kings %}.
+The second book in the Stormlight Archives series. [FYI my notes on the first book.]({% post_url 2022-02-08-the-way-of-kings %}).
 
 ~1300 pages is a long walk for me, but as you get to know the characters and the world the book reads faster. If you read the first book, the second book is a must-read.
 
