@@ -168,6 +168,14 @@ Crates.io is a public repository of useful code. Anyone can publish to it. Code 
 
 Box<T> stores T on the heap. E.g. let n = Box::new(5) creates an i32 value of 5 on the heap.
 
-The Deref trait provides the dereference operator *.
+The Deref trait provides the dereference operator *. Can then treat a reference like a type.
 
-Deref coercion...
+Deref coercion converts a reference to another type of reference that helps avoid unnecessary reference/dereference calls everywhere. E.g. &String -> &str.
+
+The Drop trait provides code cleanup when the variable goes out of scope.
+
+Rc<T> for reference counting.
+
+RefCell<T> to check borrowing rules at runtime instead of compile time. *Interior mutability* pattern. Useful for Mock objects.
+
+Can still get memory leaks with a reference cycle. Solution: use Weak<T> instead of Rc<T>.
