@@ -179,3 +179,13 @@ Rc<T> for reference counting.
 RefCell<T> to check borrowing rules at runtime instead of compile time. *Interior mutability* pattern. Useful for Mock objects.
 
 Can still get memory leaks with a reference cycle. Solution: use Weak<T> instead of Rc<T>.
+
+## 16. Fearless Concurrency
+
+This is cool.
+
+Rust standard library uses one system thread per language thread.
+
+Return value from thread::spawn is a JoinHandle. Use to allow spawned threads to finish.
+
+Use move closure to let spawned thread take ownership of variables.
