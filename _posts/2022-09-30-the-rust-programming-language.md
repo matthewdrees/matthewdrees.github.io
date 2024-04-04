@@ -182,10 +182,14 @@ Can still get memory leaks with a reference cycle. Solution: use Weak<T> instead
 
 ## 16. Fearless Concurrency
 
-This is cool.
+This is cool. Concurrency errors get caught at compile time in Rust.
 
 Rust standard library uses one system thread per language thread.
 
 Return value from thread::spawn is a JoinHandle. Use to allow spawned threads to finish.
 
 Use move closure to let spawned thread take ownership of variables.
+
+Message passing and shared memory using Send and Sync traits.
+
+Concurrency in rust is implemented in the standard library and crates, not in the Rust language.
