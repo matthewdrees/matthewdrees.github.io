@@ -24,7 +24,7 @@ Plants have a lot to teach us if we pay attention. The author got a PhD in botan
 
 Only harvest half of what's available in the wild at a given spot. Some plants (sweetgrass) depend on harvests. Grasses depend on animals eating them.
 
-I'm just now learning about the "trinity" in American agriculture technique: corn, beans, and squash. They help each other grow and keep the soil rich in nitrogen. You can mix the types of each to get variety. I learned the Aztecs were doing this as well on our recent trip to Mexico.
+I'm just now learning about the "three sisters" in American agriculture technique: corn, beans, and squash. They help each other grow and keep the soil rich in nitrogen. You can mix the types of each to get variety. I learned the Aztecs were doing this as well on our recent trip to Mexico.
 
 My favorite story was the author's quest to turn the spring-fed pond on her farm from a mucky green slimy mess into a clear blue pond because she and her daughters wanted to swim in it. She pulled the plants that grew in the pond, let them dry for a day or so, then hauled them out of the watershed. She did it with spare bits of time she had from being a professor and a single mom. It took a couple of decades (the kids were out of the house by then), but she did it. I enjoy hearing about personal quests like this! What is the pond-clearing job in my life? Hmmm.
 
