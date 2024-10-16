@@ -6,6 +6,8 @@ category: book
 
 [Energy Primer: A Handbook of Energy Market Basics](https://www.ferc.gov/media/energy-primer-handbook-energy-market-basics), a book-length document put together by the [Office of Energy Policy and Innovation](https://www.ferc.gov/office-energy-policy-and-innovation-oepi), December 2023.
 
+I am impressed that someone took the time to put this together. It's a good primer!
+
 ## Wholesale Natural Gas Markets
 
 I didn't care as much about this section, but skimming it shows where different kinds of natural gas are in the ground (p7), interesting maps of where natural gas is extracted in the US, and a description of natural gas production and delivery (p16).
