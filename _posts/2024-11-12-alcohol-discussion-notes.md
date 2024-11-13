@@ -33,7 +33,7 @@ I also found the [Healthy Youth Survey](https://www.askhys.net/SurveyResults/Dat
   * Ask about non-alcoholic options.
   * Just don't drink much of it.
   * Say no.
-* Erica Barnett's [book on dealing with her alcoholism]({% post_url 2020-11-17-quitter-a-memior-of-drinking-relapse-and-recovery %}) suggested no more than 1 drink per hour, 2 drinks per day, and 4 in a week.
+* Erica Barnett's [book on dealing with her alcoholism]({% post_url 2020-11-07-quitter-a-memior-of-drinking-relapse-and-recovery %}) suggested no more than 1 drink per hour, 2 drinks per day, and 4 in a week.
 * Recent studies suggest that [no amount of alcohol is good for you](https://www.who.int/europe/news/item/04-01-2023-no-level-of-alcohol-consumption-is-safe-for-our-health).
 * Know how much alcohol in each drink:
   * lager beer: ~5%
@@ -53,7 +53,7 @@ I also found the [Healthy Youth Survey](https://www.askhys.net/SurveyResults/Dat
 Another good resource listed by the Lincoln High School.
 
 * Drinking alcohol isn't "normal".
-* Many are coerced into trying it to fit in, socialize, deal with life tranisitions, or deal with emotional pain.
+* Many are coerced into trying it to fit in, socialize, deal with life transitions, or deal with emotional pain.
 * Advice for parents (see link)
 
 <https://drugfree.org/article/teen-brain-development/>
