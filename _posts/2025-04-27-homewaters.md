@@ -14,7 +14,7 @@ Scoring:
 * Axe for the frozen sea: 10/10.
 * Page count: 196, effective page count: about that.
 
-I've really enjoyed travel-writing books like [Oaxaca Journal]({% post_url 2024-06-28-oaxaca-journal %}) and [Coming into the Country](https://en.wikipedia.org/wiki/Coming_into_the_Country). I like how the Nytimes does "Read your way through <city>", like [Chicago](https://www.nytimes.com/2024/12/11/books/chicago-books-rebecca-makkai.html), where they recommend an interesting collection of books for that city. They haven't done one for Seattle, but I've been keeping an eye out for books to include. There is healthy [subreddit on Books on local (Seattle) history](https://www.reddit.com/r/Seattle/comments/13eabbu/books_on_local_seattle_history/). This book should 100% be on the list!
+I've really enjoyed travel-writing books like [Oaxaca Journal]({% post_url 2024-06-28-oaxaca-journal %}) and [Coming into the Country](https://en.wikipedia.org/wiki/Coming_into_the_Country). I like how the Nytimes does articles like [Read your way through Chicago](https://www.nytimes.com/2024/12/11/books/chicago-books-rebecca-makkai.html), where they recommend an interesting collection of books for that city. They haven't done one for Seattle, but I've been keeping an eye out for books to include. There is healthy [subreddit on Books on local Seattle history](https://www.reddit.com/r/Seattle/comments/13eabbu/books_on_local_seattle_history/). This book should 100% be on the list!
 
 The subtitle says it all "A Human and Natural History of Puget Sound". I plan to keep this book on the bookshelf and loan to friends.
 
